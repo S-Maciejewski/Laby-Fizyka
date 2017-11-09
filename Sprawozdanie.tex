@@ -1,0 +1,88 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+
+\usepackage[polish]{babel}
+\usepackage{hhline}
+\usepackage{pgfplots}
+
+\usepackage{geometry}
+\geometry{a4paper, total={170mm,257mm}, left=20mm, top=20mm }
+
+\author{Sebastian Maciejewski (132275) i Jan Techner 132332}
+\title{Wyznaczanie współczynnika rozszerzalności liniowej ciał stałych - \\ doświadczenie 103 (sala 217)}
+\date{10 listopada 2017}
+\setlength{\parindent}{0pt}
+\newcommand{\forceindent}{\leavevmode{\parindent=3em\indent}}
+\begin{document}
+\maketitle
+\section{Wstęp teorytyczny}
+\forceindent Zmiana temperatury ciała z reguły powoduje zmianę jego wymiarów liniowych. Elementarny przyrost temperatury $dT$ ciała o długości $l$ powoduje przyrost długości $dl$, który jest określony wzorem: 
+\begin{equation}
+dl = \alpha \, l \, dT.
+\end{equation}
+\forceindent Współczynnik $\alpha$ nazywany jest współczynnikiem rozszerzalności liniowej. Jego wartość liczbowa jest równa względnemu przyrostowi długości $dl/l$ spowodowanemu zmianą temperatury o $1^{\circ}$C i zależy od rodzaju ciała, a także od temperatury. Zależność współczynnika $\alpha$ od temperatury powoduje, że długość ciała jest na ogół nieliniową funkcją temperatury. Jednakże w zakresie niewielkich zmian temperatury można przyjąć, że współczynnik $\alpha$ jest stały, a długość jest wprost proporcjonalna do temperatury. W takim przypadku wzór $(1)$ można zastąpić wzorem: 
+\begin{equation}
+l - l_{0} = \alpha_{sr} \, l_{0} \, \Delta T,
+\end{equation}
+który znacznie ułatwia obliczenie długości w dowolnej temperaturze. \\ \newline
+\forceindent Przyczyny zjawiska rozszerzalności cieplnej są związane ze stukturą mikroskopową ciał. Ciała stałe są zbudowane z atomów (jonów) rozłożonych regularnie w przestrzeni i tworzących sieć krystaliczą. Atomy są ze sobą powiązane siłami pochodzenia elektrycznego, co uniemożliwia im trwałą zmianę położenia. Dostarczona do kryształu energia cieplna wywołuje drgania atomów wokół położeń równowagi, a amplituda tych drgań rośnie wraz ze wzrostem temperatury. Częstotliwość drgań atomów sięga rzędu $10^{13}$ Hz. W tej sytuacji ciężko jest określić odległośc między atomami, a pojęcie to ma sens tylko jako odległość pomiędzy środkami drgań sąsiednich atomów. \\ \newline
+\forceindent Gdyby energia kinetyczna atomów była równa zeru, znajdowałyby się one w odległości $r_0$ od siebie, a przy tej odległości energia potencjalna ma swoje minimum. W rzeczywistości jednak atomy wykonują drgania wokół położeń równowagi, tnz. mają pewną energię kinetyczną, zależną od temperatury. Wskutek asymetrii krzywej potencjalnej średnia odległość między cząsteczkami nie będzie się pokrywać z wartością $r_0$, ale będzie rosła wraz ze wzrostem temperatury. \\ \newline
+\forceindent Z powyższego opisu wynika, że podczas wzrostu temperatury rośnie nie tylko amplituda drgań atomów, ale także średnia odległość między nimi, co rzutuje na makroskopowe wydłużenie ciała zwane rozszerzalnością cieplną.  
+
+\subsection*{Opis doświadczenia}
+
+\forceindent Badane ciała, w naszym przypadku 3 pręty (stalowy, mosiężny i miedziany), umieszczamy w płaszczu wodnym połączonym z termostatem. Jeden koniec każdego z prętów umieszczony jest w uchwycie, natomiast drugi przesuwa się w miarę podgrzewania. Wydłużenie każdego pręta mierzymy czujnikiem mikrometrycznym, a jego temperaturę termometrem elektrycznym.  
+
+\section{Wyniki pomiarów}
+Początkowa długość i temperatura prętów została zamierzona na początku i wynosiła:\\
+23,4 $^{\circ}$C i 72,3 cm dla Stali,\\
+23,8 $^{\circ}$C i 71,2 cm dla Mosiądzu,\\
+23,8 $^{\circ}$C i 72,35 cm dla Miedzi.\\
+
+\newpage
+\forceindent Poniższa tabela ukazuje zmiany długości prętów pod wpływem temperatury.\\
+
+\begin{center}
+\begin{tabular}{|c|c||c|c||c|c|}
+\multicolumn{2}{c}{Stal} & \multicolumn{2}{c}{Mosiądz} & \multicolumn{2}{c}{Miedź}\\
+\hhline{|=|==|==|=|}
+\textbf{T ($^{\circ}$C)} & \textbf{$\Delta$ L (mm)} & \textbf{T. ($^{\circ}$C)} & \textbf{$\Delta$ L (mm)} & \textbf{T ($^{\circ}$C)} & \textbf{$\Delta$ L (mm)}\\
+\hline
+23,4 & 0,04 & 27,7 & 0,07 & 27,4 & 0,06\\
+\hline
+33,2 & 0,11 & 33,3 & 0,19 & 32,6 & 0,15\\
+\hline
+38,6 & 0,16 & 38,3 & 0,26 & 38,2 & 0,23\\
+\hline
+43,1 & 0,21 & 43,0 & 0,34 & 43,0 & 0,30\\
+\hline
+48,0 & 0,25 & 48,3 & 0,44 & 48,3 & 0,38\\
+\hline
+53,2 & 0,32 & 53,0 & 0,53 & 53,0 & 0,47\\
+\hline
+58,2 & 0,37 & 58,1 & 0,63 & 58,0 & 0,54\\
+\hline
+53,3 & 0,28 & 53,1 & 0,50 & 53,2 & 0,42\\
+\hline
+48,3 & 0,23 & 48,4 & 0,42 & 48,4 & 0,34\\
+\hline
+43,3 & 0,23 & 43,2 & 0,33 & 43,1 & 0,26\\
+\hline
+38,5 & 0,13 & 38,4 & 0,26 & 38,4 & 0,19\\
+\hline
+33,2 & 0,08 & 33,3 & 0,17 & 32,2 & 0,12\\
+\hline
+28,1 & 0,02 & 28,1 & 0,08 & 28,2 & 0,04\\
+\hline
+
+\end{tabular}
+\end{center}
+
+\section{Opracowanie wyników}
+lorem ipsum
+Hello World!
+
+
+\end{document}
