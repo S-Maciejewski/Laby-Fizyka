@@ -1,0 +1,313 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+
+\usepackage[polish]{babel}
+\usepackage{hhline}
+\usepackage{pgfplots}
+
+\usepackage{geometry}
+\geometry{a4paper, total={170mm,257mm}, left=20mm, top=20mm }
+
+\author{Sebastian Maciejewski 132275 i Jan Techner 132332}
+\title{Wyznaczanie współczynnika rozszerzalności liniowej ciał stałych - \\ doświadczenie 103 (sala 217)}
+\date{10 listopada 2017}
+\setlength{\parindent}{0pt}
+\newcommand{\forceindent}{\leavevmode{\parindent=3em\indent}}
+\begin{document}
+\maketitle
+\section{Wstęp teorytyczny}
+\forceindent Zmiana temperatury ciała z reguły powoduje zmianę jego wymiarów liniowych. Elementarny przyrost temperatury $dT$ ciała o długości $l$ powoduje przyrost długości $dl$, który jest określony wzorem: 
+\begin{equation}
+dl = \alpha \, l \, dT.
+\end{equation}
+\forceindent Współczynnik $\alpha$ nazywany jest współczynnikiem rozszerzalności liniowej. Jego wartość liczbowa jest równa względnemu przyrostowi długości $dl/l$ spowodowanemu zmianą temperatury o $1^{\circ}$C i zależy od rodzaju ciała, a także od temperatury. Zależność współczynnika $\alpha$ od temperatury powoduje, że długość ciała jest na ogół nieliniową funkcją temperatury. Jednakże w zakresie niewielkich zmian temperatury można przyjąć, że współczynnik $\alpha$ jest stały, a długość jest wprost proporcjonalna do temperatury. W takim przypadku wzór $(1)$ można zastąpić wzorem: 
+\begin{equation}
+l - l_{0} = \alpha_{sr} \, l_{0} \, \Delta T,
+\end{equation}
+który znacznie ułatwia obliczenie długości w dowolnej temperaturze. \\ \newline
+\forceindent Przyczyny zjawiska rozszerzalności cieplnej są związane ze stukturą mikroskopową ciał. Ciała stałe są zbudowane z atomów (jonów) rozłożonych regularnie w przestrzeni i tworzących sieć krystaliczą. Atomy są ze sobą powiązane siłami pochodzenia elektrycznego, co uniemożliwia im trwałą zmianę położenia. Dostarczona do kryształu energia cieplna wywołuje drgania atomów wokół położeń równowagi, a amplituda tych drgań rośnie wraz ze wzrostem temperatury. Częstotliwość drgań atomów sięga rzędu $10^{13}$ Hz. W tej sytuacji ciężko jest określić odległośc między atomami, a pojęcie to ma sens tylko jako odległość pomiędzy środkami drgań sąsiednich atomów. \\ \newline
+\forceindent Gdyby energia kinetyczna atomów była równa zeru, znajdowałyby się one w odległości $r_0$ od siebie, a przy tej odległości energia potencjalna ma swoje minimum. W rzeczywistości jednak atomy wykonują drgania wokół położeń równowagi, tnz. mają pewną energię kinetyczną, zależną od temperatury. Wskutek asymetrii krzywej potencjalnej średnia odległość między cząsteczkami nie będzie się pokrywać z wartością $r_0$, ale będzie rosła wraz ze wzrostem temperatury. \\ \newline
+\forceindent Z powyższego opisu wynika, że podczas wzrostu temperatury rośnie nie tylko amplituda drgań atomów, ale także średnia odległość między nimi, co rzutuje na makroskopowe wydłużenie ciała zwane rozszerzalnością cieplną.  
+
+\subsection*{Opis doświadczenia}
+
+\forceindent Badane ciała, w naszym przypadku 3 pręty (stalowy, mosiężny i miedziany), umieszczamy w płaszczu wodnym połączonym z termostatem. Stopniowo ogrzewamy pręty, regulując temperaturę wody ustawioną na termostacie co ok 5$^{\circ}$C. Jeden koniec każdego z prętów umieszczony jest w uchwycie, natomiast drugi przesuwa się w miarę podgrzewania. Po każdej zmianie temperatury i jej ustabilizowaniu mierzymy wydłużenie każdego pręta czujnikiem mikrometrycznym, a jego temperaturę termometrem elektrycznym. Po osiągnięciu temperatury ok. 60$^{\circ}$C, pręty stopniowo schładzamy, kontynuując pomiary, aż do osiągnięcia temperatury początkowej.
+\newpage
+\section{Wyniki pomiarów}
+\forceindent Początkowa temperatura i długość prętów została zmierzona na początku doświadczenia i wynosiła:
+\begin{center}
+\begin{tabular}{|c|c||c|c||c|c|}
+\multicolumn{2}{c}{Stal} & \multicolumn{2}{c}{Mosiądz} & \multicolumn{2}{c}{Miedź}\\
+\hhline{|=|==|==|=|}
+\textbf{t} & \textbf{$l_{0}$} & \textbf{t} & \textbf{$l_{0}$} & \textbf{t} & \textbf{$l_{0}$}\\
+\hline
+23,4 $^{\circ}$C & 72,3 cm & 23,8 $^{\circ}$C & 71,2 cm & 23,8 $^{\circ}$C & 72,35 cm\\
+\hline
+\end{tabular}
+\end{center}
+\vspace{10pt}
+
+
+
+\forceindent Dokładność pomiarów temperatury to $\Delta t = \pm 0,1 ^{\circ}C$ oraz $\Delta(\Delta t) = \pm 0,1 ^{\circ}C$, zaś pomiarów długości to $\Delta l_{0} = \pm 0,5 mm$ dla pomiaru długości początkowej oraz $\Delta(\Delta l) = \pm 0,01 mm$ dla pomiaru wydłużenia.
+
+\forceindent Poniższa tabela ukazuje zmiany długości prętów pod wpływem temperatury.\\
+
+\begin{center}
+\begin{tabular}{|c|c|c||c|c|c||c|c|c|}
+\multicolumn{3}{c}{Stal} & \multicolumn{3}{c}{Mosiądz} & \multicolumn{3}{c}{Miedź}\\
+\hhline{|=|=|=||=|=|=||=|=|=|}
+\textbf{t ($^{\circ}$C)} & \textbf{$\Delta$t ($^{\circ}$C)} & \textbf{$\Delta$l (mm)} & \textbf{t ($^{\circ}$C)} & \textbf{$\Delta$t ($^{\circ}$C)} & \textbf{$\Delta$l (mm)} & \textbf{t ($^{\circ}$C)} & \textbf{$\Delta$t ($^{\circ}$C)} &  \textbf{$\Delta$l (mm)}\\
+\hline
+27,5 & 4,1 & 0,04 & 27,7 & 3,9 & 0,07 & 27,4 & 3,6 & 0,06\\
+\hline
+33,2 & 9,8 & 0,11 & 33,3 & 9,5 & 0,19 & 32,6 & 8,8 & 0,15\\
+\hline
+38,6 & 15.2 & 0,16 & 38,3 & 14,5 & 0,26 & 38,2 & 14,4 & 0,23\\
+\hline
+43,1 & 19,7 & 0,21 & 43,0 & 19,2 & 0,34 & 43,0 & 19,2 & 0,30\\
+\hline
+48,0 & 24,6 & 0,25 & 48,3 & 24,5 & 0,44 & 48,3 & 24,5 & 0,38\\
+\hline
+53,2 & 29,8 & 0,32 & 53,0 & 29,2 & 0,53 & 53,0 & 29,2 & 0,47\\
+\hline
+58,2 & 34,8 & 0,37 & 58,1 & 34,3 & 0,63 & 58,0 & 34,2 & 0,54\\
+\hline
+53,3 & 29,9 & 0,28 & 53,1 & 29,3 & 0,50 & 53,2 & 29,4 & 0,42\\
+\hline
+48,3 & 24,9  & 0,23 & 48,4 & 24,6 & 0,42 & 48,4 & 24,6 & 0,34\\
+\hline
+43,3 & 19,9 & 0,17 & 43,2 & 19,4 & 0,33 & 43,1 & 19,3 & 0,26\\
+\hline
+38,5 & 15,1 & 0,13 & 38,4 & 14,6 & 0,26 & 38,4 & 14,6 & 0,19\\
+\hline
+33,2 & 9,8 & 0,08 & 33,3 & 9,5 & 0,17 & 32,2 & 8,4 & 0,12\\
+\hline
+28,1 & 4,7 & 0,02 & 28,1 & 4,3 & 0,08 & 28,2 & 4,4 & 0,04\\
+\hline
+
+\end{tabular}
+\end{center}
+\vspace{10pt}
+
+\forceindent Wartości zmiany temperatury $\Delta$t zostały obliczone w sekcji Wyniki Pomiarów ze względu na możliwość umieszczenia wszystkich danych w jednej tabeli.
+\newpage
+\section{Opracowanie wyników}
+
+
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}[scale=1.5]
+\begin{axis}[
+xlabel={Zmiana temperatury [$^{\circ}$C]},
+ylabel={Wydłużenie pręta [$10^{-5}$m]},
+xmin=0,xmax=40,
+ymin=0,ymax=70,
+legend pos=north west,
+ymajorgrids=true,grid style=dashed
+]
+
+%mosiądz - rozszerzanie
+\addplot[smooth, tension={0.3}, green, mark=*, mark size = {0.5pt}]
+coordinates {
+(0, 0)
+(3.9, 7)
+(9.5, 19)
+(14.5, 26)
+(19.2, 34)
+(24.5, 44)
+(29.2, 53)
+(34.3, 63)
+};
+
+\draw [draw=black] (342,620) rectangle ++(2, 20);
+\draw [draw=black] (291,520) rectangle ++(2, 20);
+\draw [draw=black] (244,430) rectangle ++(2, 20);
+\draw [draw=black] (191,330) rectangle ++(2, 20);
+\draw [draw=black] (144,250) rectangle ++(2, 20);
+\draw [draw=black] (94,180) rectangle ++(2, 20);
+\draw [draw=black] (38,60) rectangle ++(2, 20);
+
+%miedź - rozszerzanie
+\addplot[smooth, tension={0.3}, blue, mark=*, mark size = {0.5pt}]
+coordinates {
+(0, 0)
+(3.6, 6)
+(8.8, 15)
+(14.4, 23)
+(19.2, 30)
+(24.5, 38)
+(29.2, 47)
+(34.2, 54)
+};
+
+\draw [draw=black] (341,530) rectangle ++(2, 20);
+\draw [draw=black] (291,460) rectangle ++(2, 20);
+\draw [draw=black] (244,370) rectangle ++(2, 20);
+\draw [draw=black] (191,290) rectangle ++(2, 20);
+\draw [draw=black] (143,220) rectangle ++(2, 20);
+\draw [draw=black] (87,140) rectangle ++(2, 20);
+\draw [draw=black] (35,50) rectangle ++(2, 20);
+
+
+%stal - rozszerzanie
+\addplot[smooth, tension={0.8}, red, mark=*, mark size = {0.5pt}]
+coordinates {
+(0, 0)
+(4.1, 4)
+(9.8, 11)
+(15.2, 16)
+(19.7, 21)
+(24.6, 25)
+(29.8, 32)
+(34.8, 37)
+};
+
+\draw [draw=black] (347,360) rectangle ++(2, 20);
+\draw [draw=black] (297,310) rectangle ++(2, 20);
+\draw [draw=black] (245,240) rectangle ++(2, 20);
+\draw [draw=black] (196,200) rectangle ++(2, 20);
+\draw [draw=black] (151,150) rectangle ++(2, 20);
+\draw [draw=black] (97,100) rectangle ++(2, 20);
+\draw [draw=black] (40,30) rectangle ++(2, 20);
+
+\legend{mosiądz, miedź, stal}
+\end{axis}
+\end{tikzpicture}
+\caption{Zależność wydłużenia pręta od zmiany temperatury podczas ogrzewania}
+\label{fig:wyk}
+\end{figure}
+
+
+
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}[scale=1.5]
+\begin{axis}[
+xlabel={Zmiana temperatury [$^{\circ}$C]},
+ylabel={Wydłużenie pręta [$10^{-5}$m]},
+xmin=0,xmax=40,
+ymin=0,ymax=70,
+legend pos=north west,
+ymajorgrids=true,grid style=dashed
+]
+
+%mosiądz - rozszerzanie
+\addplot[smooth, tension={0.3}, green, mark=*, mark size = {0.5pt}]
+coordinates {
+(34.3,63)
+(29.3,50)
+(24.6,42)
+(19.4,33)
+(14.6,26)
+(9.5,17)
+(4.3,8)
+};
+
+\draw [draw=black] (342,620) rectangle ++(2, 20);
+\draw [draw=black] (292,490) rectangle ++(2, 20);
+\draw [draw=black] (245,410) rectangle ++(2, 20);
+\draw [draw=black] (193,320) rectangle ++(2, 20);
+\draw [draw=black] (145,250) rectangle ++(2, 20);
+\draw [draw=black] (94,160) rectangle ++(2, 20);
+\draw [draw=black] (42,70) rectangle ++(2, 20);
+
+%miedź - rozszerzanie
+\addplot[smooth, tension={0.3}, blue, mark=*, mark size = {0.5pt}]
+coordinates {
+(34.2,54)
+(29.4,42)
+(24.6,34)
+(19.3,26)
+(14.6,19)
+(8.4,12)
+(4.4,4)
+};
+
+\draw [draw=black] (341,530) rectangle ++(2, 20);
+\draw [draw=black] (293,410) rectangle ++(2, 20);
+\draw [draw=black] (245,330) rectangle ++(2, 20);
+\draw [draw=black] (192,250) rectangle ++(2, 20);
+\draw [draw=black] (145,180) rectangle ++(2, 20);
+\draw [draw=black] (83,110) rectangle ++(2, 20);
+\draw [draw=black] (43,30) rectangle ++(2, 20);
+
+
+%stal - rozszerzanie
+\addplot[smooth, tension={0.8}, red, mark=*, mark size = {0.5pt}]
+coordinates {
+(34.8,37)
+(29.9,28)
+(24.9,23)
+(19.9,17)
+(15.1,13)
+(9.8,8)
+(4.7,2)
+};
+
+\draw [draw=black] (347,360) rectangle ++(2, 20);
+\draw [draw=black] (298,270) rectangle ++(2, 20);
+\draw [draw=black] (248,220) rectangle ++(2, 20);
+\draw [draw=black] (198,160) rectangle ++(2, 20);
+\draw [draw=black] (150,120) rectangle ++(2, 20);
+\draw [draw=black] (97,70) rectangle ++(2, 20);
+\draw [draw=black] (46,10) rectangle ++(2, 20);
+
+\legend{mosiądz, miedź, stal}
+\end{axis}
+\end{tikzpicture}
+\caption{Zależność wydłużenia pręta od zmiany temperatury podczas stygnięcia}
+\label{fig:wyk}
+\end{figure}
+
+\newpage
+
+\forceindent W celu obliczenia współczynnika rozszerzalności z danych pomiarowych posłużymy się równaniem :
+\begin{equation}
+\Delta l = \alpha_{sr}l_{0}t - \alpha_{sr}l_{0}t_{0},
+\end{equation}
+gdzie $t_{0}$ jest temperaturą początkową, w której długość pręta wynosi $l_{0}$.\\
+\forceindent Równanie $(3)$ oznacza, że wydłużenie jest liniową funkcją temperatury (co dosyć dobrze widać na wykresach, zarówno w procesie ogrzewania jak i schładzania prętów) i że współczynnik nachylenia linii
+\begin{equation}
+a = \alpha_{sr}l_{0}
+\end{equation}. \\
+Wartość $a$ obliczamy, stosując regresję liniową do par danych ($\Delta l, T$) wyrażoną wzorem 
+\begin{equation}
+a=\frac{n\Sigma x_i y_i - \Sigma x_i \Sigma y_i}{n\Sigma x_i^2 - (\Sigma x_i)^2}.
+\end{equation}
+Jeżeli ponadto dokonamy pomiaru $l_{0}$ to równanie $(4)$ może służyć do ostatecznego obliczenia współczynnika rozszerzalności. \\
+\begin{table}[!h]
+\centering
+\begin{tabular}{|cc||c||c|}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{Stal} & \multicolumn{1}{c}{Mosiądz} & \multicolumn{1}{c}{Miedź}\\
+\hline
+ & 0,00001057850636 $\pm$ & 0,00001821528315 $\pm$ & 0,00001592162172 $\pm$\\
+po zaokrągleniu & 0,00001057850636 $\pm$ & 0,00001821528315 $\pm$ & 0,00001592162172 $\pm$\\
+\hline
+\end{tabular}
+\caption{Współczynnik nachylenia linii $a$ i $\Delta a$}
+\end{table}
+
+\vspace{10pt}
+\forceindent Następnie podstawiając otrzymane wartości $a$ i $l_0$ do wzoru $(4)$ otrzymamy następujące współczynniki rozszerzalności cieplnej : \\
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c||c||c|}
+\multicolumn{1}{c}{Stal} & \multicolumn{1}{c}{Mosiądz} & \multicolumn{1}{c}{Miedź}\\
+\hline
+$(14,64 \pm 0,79)*10^{-6} K^{-1}$ & $(25,58 \pm 0,88)*10^{-6} K^{-1}$ & $\alpha_{sr}=(22,01 \pm 0,85)*10^{-6} K^{-1}$\\
+ 
+\hline
+\end{tabular}
+\caption{Współczynnik rozszerzalności cieplnej $\alpha_{sr}$ i $\Delta \alpha_{sr}$}
+\end{table}
+
+Błąd $\Delta\alpha_{sr}$ został policzony ze wzoru $\Delta\alpha = \alpha(\frac{\Delta l}{l} + \frac{\Delta dl}{dl} + \frac{\Delta T}{T})$ dla każdego z badanych metali i zaokrąglony.\\
+
+
+
+
+\end{document}
