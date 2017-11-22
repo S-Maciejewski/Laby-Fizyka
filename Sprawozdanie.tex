@@ -10,92 +10,92 @@
 \usepackage{geometry}
 \geometry{a4paper, total={170mm,257mm}, left=20mm, top=20mm }
 
-\author{Sebastian Maciejewski (132275) i Jan Techner 132332}
-\title{Wyznaczanie współczynnika rozszerzalności liniowej ciał stałych - \\ doświadczenie 103 (sala 217)}
-\date{10 listopada 2017}
+\author{Sebastian Maciejewski 132275 i Jan Techner 132332}
+\title{Badanie momentu bezwładności - \\ doświadczenie 104 (sala 217)}
+\date{24 listopada 2017}
 \setlength{\parindent}{0pt}
 \newcommand{\forceindent}{\leavevmode{\parindent=3em\indent}}
 \begin{document}
 \maketitle
 \section{Wstęp teorytyczny}
-\forceindent Zmiana temperatury ciała z reguły powoduje zmianę jego wymiarów liniowych. Elementarny przyrost temperatury $dT$ ciała o długości $l$ powoduje przyrost długości $dl$, który jest określony wzorem: 
+\forceindent W opisie dynamiki ruchu postępowego pojawia się pojęcie bezwładności związane z masą \textit{m}
+poruszającego się ciała. W przypadku ruchu obrotowego znajomość masy ciała jest niewystarczająca, istotny
+jest również jej przestrzenny rozkład względem osi obrotu. Wielkością fizyczną zawierającą informacje o
+masie ciała i jej przestrzennym rozkładzie względem osi obrotu jest moment bezwładności \textit{I}.\\
+\forceindent Dla pojedynczego punktu materialnego o masie m wirującego wokół osi oddalonej od niego o
+odległość \textit{r} możemy zapisać następującą zależność na moment bezwładności:
 \begin{equation}
-dl = \alpha \, l \, dT.
+I=mr^2
 \end{equation}
-\forceindent Współczynnik $\alpha$ nazywany jest współczynnikiem rozszerzalności liniowej. Jego wartość liczbowa jest równa względnemu przyrostowi długości $dl/l$ spowodowanemu zmianą temperatury o $1^{\circ}$C i zależy od rodzaju ciała, a także od temperatury. Zależność współczynnika $\alpha$ od temperatury powoduje, że długość ciała jest na ogół nieliniową funkcją temperatury. Jednakże w zakresie niewielkich zmian temperatury można przyjąć, że współczynnik $\alpha$ jest stały, a długość jest wprost proporcjonalna do temperatury. W takim przypadku wzór $(1)$ można zastąpić wzorem: 
-\begin{equation}
-l - l_{0} = \alpha_{sr} \, l_{0} \, \Delta T,
-\end{equation}
-który znacznie ułatwia obliczenie długości w dowolnej temperaturze. \\ \newline
-\forceindent Przyczyny zjawiska rozszerzalności cieplnej są związane ze stukturą mikroskopową ciał. Ciała stałe są zbudowane z atomów (jonów) rozłożonych regularnie w przestrzeni i tworzących sieć krystaliczą. Atomy są ze sobą powiązane siłami pochodzenia elektrycznego, co uniemożliwia im trwałą zmianę położenia. Dostarczona do kryształu energia cieplna wywołuje drgania atomów wokół położeń równowagi, a amplituda tych drgań rośnie wraz ze wzrostem temperatury. Częstotliwość drgań atomów sięga rzędu $10^{13}$ Hz. W tej sytuacji ciężko jest określić odległośc między atomami, a pojęcie to ma sens tylko jako odległość pomiędzy środkami drgań sąsiednich atomów. \\ \newline
-\forceindent Gdyby energia kinetyczna atomów była równa zeru, znajdowałyby się one w odległości $r_0$ od siebie, a przy tej odległości energia potencjalna ma swoje minimum. W rzeczywistości jednak atomy wykonują drgania wokół położeń równowagi, tnz. mają pewną energię kinetyczną, zależną od temperatury. Wskutek asymetrii krzywej potencjalnej średnia odległość między cząsteczkami nie będzie się pokrywać z wartością $r_0$, ale będzie rosła wraz ze wzrostem temperatury. \\ \newline
-\forceindent Z powyższego opisu wynika, że podczas wzrostu temperatury rośnie nie tylko amplituda drgań atomów, ale także średnia odległość między nimi, co rzutuje na makroskopowe wydłużenie ciała zwane rozszerzalnością cieplną.  
 
 \subsection*{Opis doświadczenia}
 
-\forceindent Badane ciała, w naszym przypadku 3 pręty (stalowy, mosiężny i miedziany), umieszczamy w płaszczu wodnym połączonym z termostatem. Jeden koniec każdego z prętów umieszczony jest w uchwycie, natomiast drugi przesuwa się w miarę podgrzewania. Wydłużenie każdego pręta mierzymy czujnikiem mikrometrycznym, a jego temperaturę termometrem elektrycznym.  
-
-\section{Wyniki pomiarów}
-Początkowa długość i temperatura prętów została zamierzona na początku i wynosiła:\\
-23,4 $^{\circ}$C i 72,3 cm dla stali,\\
-23,8 $^{\circ}$C i 71,2 cm dla mosiądzu,\\
-23,8 $^{\circ}$C i 72,35 cm dla miedzi.\\
+\forceindent W ćwiczeniu zostaną wyznaczone momenty bezwładności stalowego pręta oraz dysku. Dodatkowym
+zadaniem będzie eksperymentalne potwierdzenie twierdzenia Steinera. Do badań posłuży wahadło skrętne
+złożone ze stabilnej podstawy oraz pionowej osi osadzonej na łożyskach o bardzo małym tarciu. Oś oraz
+podstawa połączone są przy pomocy spiralnej sprężyny, która umożliwia wahania skrętne. Na końcu osi
+znajduje się śruba umożliwiająca mocowanie na niej brył.\\
+\forceindent Wahadło skrętne jest szczególnym przypadkiem wahadła fizycznego. Jeżeli założymy, że wychylenia
+wahadła są niewielkie (do około $180^{\circ}$) oraz zaniedbamy siły oporu, jego ruch można opisać jako ruch
+harmoniczny prosty. W takim przypadku okres T drgań wahadła można zapisać następująco:
+\begin{equation}
+T = 2 \pi \sqrt{\frac{I}{D}}
+\end{equation}
+Gdzie $D$ jest parametrem charakterystycznym dla danej sprężyny - jej momentem kierującym.
 
 \newpage
-Poniższa tabela ukazuje zmiany długości prętów pod wpływem temperatury.\\
-Dokładność pomiarów temperatury to $\Delta t = \pm 0,1 ^{\circ}C$, zaś pomiarów długości to $\Delta l = \pm 0,01 mm$\\
-dla pomiaru wydłużenia oraz $\Delta l = \pm 0,05 cm$ dla pomiaru długości początkowej.
-
-\begin{center}
-\begin{tabular}{|c|c||c|c||c|c|}
-\multicolumn{2}{c}{Stal} & \multicolumn{2}{c}{Mosiądz} & \multicolumn{2}{c}{Miedź}\\
-\hhline{|=|==|==|=|}
-\textbf{t ($^{\circ}$C)} & \textbf{$\Delta$ l (mm)} & \textbf{t ($^{\circ}$C)} & \textbf{$\Delta$ l (mm)} & \textbf{t ($^{\circ}$C)} & \textbf{$\Delta$ l (mm)}\\
-\hline
-27,5 & 0,04 & 27,7 & 0,07 & 27,4 & 0,06\\
-\hline
-33,2 & 0,11 & 33,3 & 0,19 & 32,6 & 0,15\\
-\hline
-38,6 & 0,16 & 38,3 & 0,26 & 38,2 & 0,23\\
-\hline
-43,1 & 0,21 & 43,0 & 0,34 & 43,0 & 0,30\\
-\hline
-48,0 & 0,25 & 48,3 & 0,44 & 48,3 & 0,38\\
-\hline
-53,2 & 0,32 & 53,0 & 0,53 & 53,0 & 0,47\\
-\hline
-58,2 & 0,37 & 58,1 & 0,63 & 58,0 & 0,54\\
-\hline
-53,3 & 0,28 & 53,1 & 0,50 & 53,2 & 0,42\\
-\hline
-48,3 & 0,23 & 48,4 & 0,42 & 48,4 & 0,34\\
-\hline
-43,3 & 0,23 & 43,2 & 0,33 & 43,1 & 0,26\\
-\hline
-38,5 & 0,13 & 38,4 & 0,26 & 38,4 & 0,19\\
-\hline
-33,2 & 0,08 & 33,3 & 0,17 & 32,2 & 0,12\\
-\hline
-28,1 & 0,02 & 28,1 & 0,08 & 28,2 & 0,04\\
-\hline
-
-\end{tabular}
-\end{center}
-
+\section{Wyniki pomiarów}
+TODO tabelka z wynikami
 \section{Opracowanie wyników}
-\forceindent Korzystając z regresji liniowej (zależność długości pręta od temperatury jest liniowa) możemy policzyć współczynnik $a$ występujący we wzorze:
+TODO wykresy
+
+
+\forceindent W celu obliczenia współczynnika rozszerzalności z danych pomiarowych posłużymy się równaniem :
 \begin{equation}
-a = \alpha_{sr} l_{0},
+\Delta l = \alpha_{sr}l_{0}t - \alpha_{sr}l_{0}t_{0},
 \end{equation}
-przy pomocy wzoru $a=\frac{n\Sigma x_i y_i - \Sigma x_i \Sigma y_i}{n\Sigma x_i^2 - (\Sigma x_i)^2}$ zastosowanego do funkcji $dl = f(T)$, której wartości znajdują się w tabeli z wynikami pomiarów.
-Możemy zatem policzyć współczynnik $\alpha$  i błąd $\Delta\alpha = \alpha(\frac{\Delta l}{l} + \frac{\Delta dl}{dl} + \frac{\Delta T}{T})$ dla każdego z badanych metali.\\
-Dla stali otrzymany przez nas wynik to $\alpha_{sr}=(14,64 \pm 0,79)*10^{-6} K^{-1}$,\\
-dla mosiądzu $\alpha_{sr}=(25,58 \pm 0,88)*10^{-6} K^{-1}$,\\
-zaś dla miedzi $\alpha_{sr}=(22,01 \pm 0,85)*10^{-6} K^{-1}$.\\
-\newline \forceindent Wyniki, które otrzymaliśmy nieznacznie jedynie odbiegają od wartości podanych w tablicach, głównie dlatego, że większość tablic podaje współczynnik 
-rozszerzalności dla temperatury bliskiej 20$^{\circ}$C, zaś nasze pomiary dotyczą średniego współczynnika w znacznie szerszym zakresie temperatur.
-Część różnic wynika też zapewne z niedokładności wykorzystywanych urządzeń pomiarowych, choć jak widać powyżej błąd wyznaczenia $\alpha$ jest stosunkowo mały.\\
-Wnioski płynące z tego doświadczenia (szczególnie kształt wykresów) potwierdzają, że badane zjawisko jest istotnie zjawiskiem liniowym. Co więcej, wyznaczone wartości współczynników, które są zbliżone do rzeczywistych, potwierdzają, że pomiary były przeprowadzane w sposób poprawny, co dowodzi, iż wnioski o liniowej naturze rozszerzalności metali są uzasadnione.
+gdzie $t_{0}$ jest temperaturą początkową, w której długość pręta wynosi $l_{0}$.\\
+\forceindent Równanie $(3)$ oznacza, że wydłużenie jest liniową funkcją temperatury (co dosyć dobrze widać na wykresach, zarówno w procesie ogrzewania jak i schładzania prętów) i że współczynnik nachylenia linii
+\begin{equation}
+a = \alpha_{sr}l_{0}
+\end{equation}. \\
+Wartość $a$ obliczamy, stosując regresję liniową do par danych ($\Delta l, T$) wyrażoną wzorem 
+\begin{equation}
+a=\frac{n\Sigma x_i y_i - \Sigma x_i \Sigma y_i}{n\Sigma x_i^2 - (\Sigma x_i)^2}.
+\end{equation}
+Jeżeli ponadto dokonamy pomiaru $l_{0}$ to równanie $(4)$ może służyć do ostatecznego obliczenia współczynnika rozszerzalności. \\
+\begin{table}[!h]
+\centering
+\begin{tabular}{|cc||c|}
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{$a$} & \multicolumn{1}{c}{$D$}\\
+\hline
+pomiar & 24366,1434802235$\pm$& 0,000839271932206056$\pm$\\
+\hline
+dokładność & zmyślona & zmyślona\\
+\hline
+po zaokrągleniu & ileś tam  & ileś tam \\
+\hline
+\end{tabular}
+\caption{Współczynnik nachylenia linii $a$ i moment kierujący $D$ wraz z dokładnościami $\Delta a$ i $\Delta D$}
+\end{table}
+
+\vspace{10pt}
+\forceindent Następnie podstawiając otrzymane wartości $a$ i $l_0$ do wzoru $(4)$ otrzymamy następujące współczynniki rozszerzalności cieplnej : \\
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c||c||c|}
+\multicolumn{1}{c}{Stal} & \multicolumn{1}{c}{Mosiądz} & \multicolumn{1}{c}{Miedź}\\
+\hline
+$(14,64 \pm 0,79)*10^{-6} K^{-1}$ & $(25,58 \pm 0,88)*10^{-6} K^{-1}$ & $\alpha_{sr}=(22,01 \pm 0,85)*10^{-6} K^{-1}$\\
+ 
+\hline
+\end{tabular}
+\caption{Współczynnik rozszerzalności cieplnej $\alpha_{sr}$ i $\Delta \alpha_{sr}$}
+\end{table}
+
+Błąd $\Delta\alpha_{sr}$ został policzony ze wzoru $\Delta\alpha = \alpha(\frac{\Delta l}{l} + \frac{\Delta dl}{dl} + \frac{\Delta T}{T})$ dla każdego z badanych metali i zaokrąglony.\\
+
 
 
 
