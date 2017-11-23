@@ -120,7 +120,7 @@ Odległość od osi obrotu [cm]& Próba 1 [s] & Próba 2 [s] & Próba 3 [s] & Ś
 \vspace{10pt}
 
 \section{Opracowanie wyników}
-TODO wykresy
+
 \begin{figure}[!h]
 \centering
 \begin{tikzpicture}[scale=1]
@@ -167,12 +167,16 @@ gdzie $T$ jest okresem drgań naszego wahadła, $m_c$ jest zmierzoną masą cię
 \forceindent Równanie $(3)$ oznacza, że zależność kwadratu okresów $T$ od kwadratów odległości $r$ jest liniowa (co w przybliżeniu widać na wykresie). Można zatem policzyć współczynnik nachylenia prostej przy pomocy metody regresji liniowej (gdzie $x = r^2$ i $y = T^2$). Współczynnik $a$ wyraża się wzorem:
 
 \begin{equation}
-a=\frac{n\Sigma x_i y_i - \Sigma x_i \Sigma y_i}{n\Sigma x_i^2 - (\Sigma x_i)^2}.
+a=\frac{n\Sigma x_i y_i - \Sigma x_i \Sigma y_i}{n\Sigma x_i^2 - (\Sigma x_i)^2},
 \end{equation}
 
-$$
-D=\frac{kg}{\frac{s^2}{m^2}}=\frac{kg*m^2}{s^2}
-$$
+zaś jego jednostką jest $ a=\frac{\frac{1}{s^2}*m^2-\frac{1}{s^2}*m^2}{m^4-m^4}=\frac{s^2}{m^2} $.\\
+
+W takiej sytuacji możemy łatwo policzyć $D$ ze wzoru:
+\begin{equation}
+D = \frac{8\pi ^2 m_c}{a},
+\end{equation}
+jednostką $D$ jest, jak widać $ D=\frac{kg}{\frac{s^2}{m^2}}=\frac{kg*m^2}{s^2} $.
 
 \begin{table}[!h]
 \centering
@@ -189,8 +193,51 @@ po zaokrągleniu & ileś tam  & ileś tam \\
 \caption{Współczynnik nachylenia linii $a$ i moment kierujący $D$ wraz z dokładnościami $\Delta a$ i $\Delta D$}
 \end{table}
 
-TODO
+\forceindent Z wyników uzyskanych dla nieobciążonego pręta obliczyliśmy jego moment bezwładności wraz z niepewnością jako:
+$ I = \frac{0,136kg * (0,62m)^2}{12} = (0,00436 \pm 0,00300) kg*m^2 $
 
+\forceindent W podobny sposób, znając średni okres $T = 2,837 s$ obrotu dysku wokół osi przechodzącej przez jego środek, możemy policzyć jego moment bezwładności, który wynosi
+$ I = \frac{0,435kg*(0,16m)^2}{2} = (0,00557 \pm 0,00300) kg*m^2 $
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline	
+ & Śr. Okres T & Teoretyczny & Zmierzony & Niepewność\\
+\hline
+Pręt & 2,503 & 0,004357 & 0,004212 & 0,003000\\
+\hline
+Ciężarki 5 cm od osi & 2,849&0,005652&	0,005457&	0,006000\\
+\hline
+Ciężarki 10 cm od osi&3,698	&0,009537&	0,009192&	0,006000\\
+\hline
+Ciężarki 15 cm od osi&4,809 &0,016012&	0,015542&	0,006000\\
+\hline
+Ciężarki 20 cm od osi&6,001 &0,025077&	0,024203&	0,006000\\
+\hline
+Ciężarki 25 cm od osi&7,286 &0,036732&	0,035682&	0,006000\\
+\hline
+Ciężarki 30 cm od osi&8,574	&0,050977&	0,049412&	0,006000\\
+\hline
+Dysk&2,837&0,005568&	0,005409&	0,003000\\
+\hline
+Dysk 2 cm od osi&2,844&0,005742&	0,005437&	0,006000\\
+\hline
+Dysk 4 cm od osi&2,905&0,006264&	0,005674&	0,006000\\
+\hline
+Dysk 6 cm od osi&3,174&0,007134&	0,006771&	0,006000\\
+\hline
+Dysk 8 cm od osi&3,445&0,008352&	0,007979&	0,006000\\
+\hline
+Dysk 10 cm od osi&3,803&0,009918&	0,009719&	0,006000\\
+\hline
+Dysk 12 cm od osi&4,169&0,011832&	0,011680&	0,006000\\
+\hline
+Dysk 14 cm od osi&4,565&0,014094&	0,014005&	0,006000\\
+\hline
+
+
+\end{tabular}
+\end{center}
 
 
 \end{document}
