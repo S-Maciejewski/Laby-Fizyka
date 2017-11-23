@@ -18,8 +18,7 @@
 \begin{document}
 \maketitle
 \section{Wstęp teorytyczny}
-\forceindent W opisie dynamiki ruchu postępowego pojawia się pojęcie bezwładności związane z masą \textit{m}
-poruszającego się ciała. W przypadku ruchu obrotowego znajomość masy ciała jest niewystarczająca, istotny
+\forceindent W opisie dynamiki ruchu postępowego pojawia się pojęcie bezwładności związane z masą \textit{m} poruszającego się ciała. W przypadku ruchu obrotowego znajomość masy ciała jest niewystarczająca, istotny
 jest również jej przestrzenny rozkład względem osi obrotu. Wielkością fizyczną zawierającą informacje o
 masie ciała i jej przestrzennym rozkładzie względem osi obrotu jest moment bezwładności \textit{I}.\\
 \forceindent Dla pojedynczego punktu materialnego o masie m wirującego wokół osi oddalonej od niego o
@@ -27,6 +26,17 @@ odległość \textit{r} możemy zapisać następującą zależność na moment b
 \begin{equation}
 I=mr^2
 \end{equation}
+W przypadku układu N punktów materialnych sztywno połączonych ze sobą względem osi obrotu, zwanej osią bezwładności, moment bezwładności układu jest równy sumie momentów bezwładności poszczególnych punktów materialnych.
+\begin{equation}
+I=m_1r_{1}^{2} + m_2r_{2}^{2} + ... + m_Nr_{N}^{2} = \sum\limits_{i=1}^{N} m_{i}r_{i}^{2}.
+\end{equation}
+gdzie $m_{i}$ jest jest masą $i$-tego punktu materialnego, a $r_{i}$ jego odległością od osi bezwładności.
+\subsection*{Twierdzenie Steinera} 
+\forceindent Jeżeli chcemy obliczyć moment bezwładności względem dowolnej osi nieprzechodzącej przez środek masy bryły, przydatna staje się twierdznie Steinera. Mówi ono, że jeżeli moment bezwładności bryły sztywnej względem osi przechodzącej przez jej środek masy równa się $I_{0}$ to moment bezwładności tej bryły obracającej się względem innej osi równoległej do osi przechodzącej przez jej środek masy wynosi:
+\begin{equation}
+I = I_{0} + md^2,
+\end{equation}
+gdzie $m$ jest masą bryły, a $d$ odległością między osiami.
 
 \subsection*{Opis doświadczenia}
 
@@ -39,15 +49,115 @@ znajduje się śruba umożliwiająca mocowanie na niej brył.\\
 wahadła są niewielkie (do około $180^{\circ}$) oraz zaniedbamy siły oporu, jego ruch można opisać jako ruch
 harmoniczny prosty. W takim przypadku okres T drgań wahadła można zapisać następująco:
 \begin{equation}
-T = 2 \pi \sqrt{\frac{I}{D}}
+T = 2 \pi \sqrt{\frac{I}{D}},
 \end{equation}
-Gdzie $D$ jest parametrem charakterystycznym dla danej sprężyny - jej momentem kierującym.
+gdzie $I$ jest momentem bezwładności bryły zamocowanej na osi wahadła, a $D$ jest parametrem charakterystycznym dla danej sprężyny - jej momentem kierującym.
 
 \newpage
 \section{Wyniki pomiarów}
-TODO tabelka z wynikami
+\forceindent Masa ciężarków, masa i długość pręta, odległości między nacięciami na pręcie zostały zmierzone na początku doświadczenia i wynosiły:\\
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Mierzona wartość & Pomiar & Dokładność pomiarowa\\
+\hhline{|=|=|=|}
+Masa ciężarków & 0.259 [kg] & $\pm$ 0.001 [kg]\\
+Masa pręta & 0.136 [kg] & $\pm$ 0.001 [kg]\\
+Masa dysku & 0.435 [kg] & $\pm$ 0.001 [kg]\\
+\hline
+Długość pręta & 0.62 [m] & $\pm$ 0.001 [m]\\
+Średnica dysku & 0.32 [m] & $\pm$ 0.001 [m]\\
+\hline
+Odległość między nacięciami & 0.05 [m] & $\pm$ 0.001 [m]\\
+\hline
+
+\end{tabular}
+\end{center}
+\vspace{10pt}
+
+\forceindent Dokładność pomiaru czasu ze względu na pomiar manualny wynosi $\pm$ 0.1s
+\vspace{10pt}
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c||c|c|c||c|c|}
+\hline
+Odległość od osi obrotu [cm]& Próba 1 [s] & Próba 2 [s] & Próba 3 [s] & Śr. 5T [s] & Śr. T [s]\\
+\hhline{|=||=|=|=||=|=|}
+0 & 12.45 & 12.50 & 12.60 & 12.517 & 2.503\\
+5 & 14.21 & 14.16 & 14.37 & 14.247 & 2.849\\ 
+10 & 18.39 & 18.46 & 18.62 & 18.490 & 3.698\\
+15 & 24.04 & 24.09 & 24.00 & 24.043 & 4.809\\
+20 & 30.20 & 30.06 & 29.75 & 30.003 & 6.001\\
+25 & 36.29 & 36.47 & 36.53 & 36.430 & 7.286\\
+30 & 42.87 & 42.83 & 42.91 & 42.870 & 8.574\\
+\hline
+
+\end{tabular}
+\caption{Pomiary czasu 5 wahnięć pręta przy różnych odległościach ciężarków od osi obrotu}
+\end{table}
+\vspace{10pt}
+
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c||c|c|c||c|c|}
+\hline
+Odległość od osi obrotu [cm]& Próba 1 [s] & Próba 2 [s] & Próba 3 [s] & Śr. 5T [s] & Śr. T [s]\\
+\hhline{|=||=|=|=||=|=|}
+0 & 14.14 & 14.18 & 14.23 & 14.185 & 2.837\\
+2 & 14.26 & 14.22 & 14.18 & 14.22 & 2.844\\ 
+4 & 14.59 & 14.41 & 14.58 & 14.525 & 2.905\\
+6 & 15.77 & 15.86 & 15.98 & 15.87 & 3.174\\
+8 & 17.27 & 17.14 & 17.27 & 17.225 & 3.445\\
+10 & 19.08 & 18.97 & 18.99 & 19.015 & 3.803\\
+12 & 20.96 & 20.81 & 20.76 & 20.845 & 4.169\\
+14 & 22.80 & 22.84 & 22.83 & 22.825 & 4.565\\
+\hline
+
+\end{tabular}
+\caption{Pomiary czasu 5 wahnięć dysku przy różnych odległościach od osi obrotu}
+\end{table}
+\vspace{10pt}
+
 \section{Opracowanie wyników}
 TODO wykresy
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}[scale=1]
+\begin{axis}[
+xlabel={Kwadrat odległości ciężarków od osi obrotu $r^2$},
+ylabel={Kwadrat okresu wahnięcia $T^2$},
+xmin=0,xmax=0.11,
+ymin=0,ymax=80,
+legend pos=north west,
+ymajorgrids=true,grid style=dashed
+]
+
+%mosiądz - rozszerzanie
+\addplot[smooth, tension={0.3}, green, mark=*, mark size = {0.5pt}]
+coordinates {
+(0, 6.265009)
+(0.0025, 8.116801)
+(0.01, 13.675204)
+(0.0225, 23.126481)
+(0.04, 36.012001)
+(0.0625, 53.085796)
+(0.09, 73.513476)
+};
+
+\draw [draw=black] (0.5,79.17) rectangle ++(4, 4);
+\draw [draw=black] (8,134.75) rectangle ++(4, 4);
+\draw [draw=black] (20.5,229.26) rectangle ++(4, 4);
+\draw [draw=black] (38,358.12) rectangle ++(4, 4);
+\draw [draw=black] (60.5,528.86) rectangle ++(4, 4);
+\draw [draw=black] (88,733.13) rectangle ++(4, 4);
+
+\legend{$f(r^2)$}
+\end{axis}
+\end{tikzpicture}
+\caption{Zależność wydłużenia pręta od zmiany temperatury podczas ogrzewania}
+\label{fig:wyk}
+\end{figure}
 
 \forceindent W celu obliczenia momentów bezwładności z danych pomiarowych posłużymy się równaniem :
 \begin{equation}
@@ -60,12 +170,9 @@ gdzie $T$ jest okresem drgań naszego wahadła, $m_c$ jest zmierzoną masą cię
 a=\frac{n\Sigma x_i y_i - \Sigma x_i \Sigma y_i}{n\Sigma x_i^2 - (\Sigma x_i)^2}.
 \end{equation}
 
-Znając $a$ możemy obliczyć moment kierujący dla tego wahadła, który wyraża się jako:
-\begin{equation}
-D = \frac{8\pi ^2 m_c}{a}
-\end{equation}
-
-Obliczone na podstawie pomiarów wartości przedstawione są, wraz z dokładnościami, w tabeli poniżej.
+$$
+D=\frac{kg}{\frac{s^2}{m^2}}=\frac{kg*m^2}{s^2}
+$$
 
 \begin{table}[!h]
 \centering
@@ -82,10 +189,7 @@ po zaokrągleniu & ileś tam  & ileś tam \\
 \caption{Współczynnik nachylenia linii $a$ i moment kierujący $D$ wraz z dokładnościami $\Delta a$ i $\Delta D$}
 \end{table}
 
-TODO\\
-\forceindent Na wykresach, które były przedstawione powyżej, widać, że wykres funkcji zależności $T^2 = f(r^2)$ jest w przybliżeniu prostą.
-Widać także, że różnica pomiędzy teoretycznie obliczoną (przy pomocy twierdzenia Steinera) wartością momentu bezwładności a wartością zmierzoną jest w większości przypadków mniejsza niż dokładność obliczona na podstawie możliwości przyrządów pomiarowych. Część wyników nieznacznie odstaje od reszty (o więcej niż jeden raz wartość dokładności pomiaru), co prawdopodobnie jest spowodowane błędem wynikającym z opóźnionego czasu reakcji osoby dokonującej pomiarów czasu. Wartość takiego błędu ciężko oszacować, jednak widać, że dla mniejszych wartości $T$ jest on mniej zauważalny, co związane jest z tym, że we wzorze $T$ jest podnoszone do kwadratu (błąd pomiarowy staje się bardziej znaczącym czynnikiem).\\
-Mimo tych drobnych błędów uważamy, że nasze pomiary i obliczenia dowodzą w sposób doświadczalny zasadności twierdzenia Steinera.
+TODO
 
 
 
