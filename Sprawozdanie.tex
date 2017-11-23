@@ -122,7 +122,7 @@ Odległość między nacięciami & 0.05 [m] & $\pm$ 0.001 [m]\\
 \hline
 Odległość od osi obrotu [cm]& Próba 1 [s] & Próba 2 [s] & Próba 3 [s] \\
 \hhline{|=||=|=|=|}
-0 & 12.45 & 12.50 & 12.60 \\
+0 & 12.45 & 12.50 & 12.60 \\ \hline
 5 & 14.21 & 14.16 & 14.37 \\ 
 10 & 18.39 & 18.46 & 18.62 \\
 15 & 24.04 & 24.09 & 24.00 \\
@@ -143,7 +143,7 @@ Odległość od osi obrotu [cm]& Próba 1 [s] & Próba 2 [s] & Próba 3 [s] \\
 \hline
 Odległość od osi obrotu [cm]& Próba 1 [s] & Próba 2 [s] & Próba 3 [s] \\
 \hhline{|=||=|=|=|}
-0 & 14.14 & 14.18 & 14.23 \\
+0 & 14.14 & 14.18 & 14.23 \\ \hline
 2 & 14.26 & 14.22 & 14.18 \\ 
 4 & 14.59 & 14.41 & 14.58 \\
 6 & 15.77 & 15.86 & 15.98 \\
@@ -161,7 +161,7 @@ Odległość od osi obrotu [cm]& Próba 1 [s] & Próba 2 [s] & Próba 3 [s] \\
 \section{Opracowanie wyników}
 \subsection{Wyznaczenie momentu kierującego sprężyny}
 
-\forceindent Dla każdego położenia ciężarków na pręcie wyznaczamy średni czas $t_{sr}$ 5 wahnięć, oraz średni okres jednego wahnięcia $T$, korzystając z zależności $T = \frac{1}{5}t_{sr}$. Wyniki przedstawiono w Tablicy 3.\\ 
+\forceindent Dla każdego położenia ciężarków na pręcie ($r$) wyznaczamy średni czas $t_{sr}$ 5 wahnięć, oraz średni okres jednego wahnięcia $T$, korzystając z zależności $T = \frac{1}{5}t_{sr}$. Wyniki przedstawiono w Tablicy 3.\\ 
 \begin{table}[!h]
 \centering
 \begin{tabular}{|c||c|c|c|}
@@ -170,14 +170,14 @@ Odległość od osi obrotu [cm]& Próba 1 [s] & Próba 2 [s] & Próba 3 [s] \\
  & $r$ [m] & $t_{sr}$ [s] & $T$ [s] \\
 \hline	
 \hline
-%Pręt & 12.517 & 2,503 \\ \hline
+Sam pręt & 0 &12.517 & 2,503 \\ \hline
 Ciężarki 5 cm od osi & 0.05 & 14.247 & 2,849\\ \hline
 Ciężarki 10 cm od osi&  0.10 & 18.490 & 3,698 \\ \hline
 Ciężarki 15 cm od osi&0.15 & 24.043 &4,809 \\ \hline
 Ciężarki 20 cm od osi&0.20 & 30.003 &6,001 \\ \hline
 Ciężarki 25 cm od osi&0.25 & 36.430 & 7,286 \\ \hline
 Ciężarki 30 cm od osi&0.30 &  42.870 & 8,574 \\ \hline
-\hline
+
 
 \end{tabular}
 \caption{}
@@ -231,19 +231,14 @@ gdzie $x_i$ to kolejne kwadraty odległości ciężarków od osi obrotu, a $y_i$
 \begin{equation}
 a = 747.958 \left[\frac{s^2}{m^2}\right]
 \end{equation}
+Błąd wyznaczenia wielkości $a$:\\
+$$ \Delta a = \sqrt{\frac{n(\Sigma y_i ^2 - a \Sigma x_i y_i - b\Sigma y_i)}{(n-2)(n \Sigma x_i ^2 - (\Sigma x_i)^2)}} = 2.852$$
 Następnie korzystając z równania (10), wyliczamy moment kierujący $D$, oraz jego niepewność:
 \begin{equation}
 D=\frac{8\pi^2m_{C}}{a} \left[\frac{kg}{\frac{s^2}{m^2}}\right] = 0.02734087 \left[\frac{kg\cdot m^2}{s^2}\right]
 \end{equation}
-
-----------------------------------do tego momentu ready --------------------\\
-
-Błąd wyznaczenia wielkości $a$:\\
-$$ \Delta a = \sqrt{\frac{n(\Sigma y_i ^2 - a \Sigma x_i y_i - b\Sigma y_i)}{(n-2)(n \Sigma x_i ^2 - (\Sigma x_i)^2)}} = 2,852$$
-
 Błąd wyznaczenia $D$ obliczamy stosując metodę różniczki logarytmicznej
-$$ \Delta D = (\frac{\Delta m_c}{m_c} + \frac{\Delta a}{a}) * D = (\frac{0,001}{0,259} + \frac{2,852}{770,663})*0,026535 = 0,0002$$
-
+$$ \Delta D = (\frac{\Delta m_c}{m_c} + \frac{\Delta a}{a}) * D = (\frac{0.001}{0.259} + \frac{2.852}{747.958})*0.02734087 = 0.0002$$
 \forceindent Zatem ostateczne wartości $a$ i $D$ wyglądają następująco:
 
 \begin{table}[!h]
@@ -251,57 +246,161 @@ $$ \Delta D = (\frac{\Delta m_c}{m_c} + \frac{\Delta a}{a}) * D = (\frac{0,001}{
 \begin{tabular}{|cc||c|}
 \multicolumn{1}{c}{} & \multicolumn{1}{c}{$a$} & \multicolumn{1}{c}{$D$}\\
 \hline
-pomiar & 770,66250527943 & 0,0265353772617267\\
+pomiar & 747.958& 0.02734087\\
 \hline
-dokładność & 2,852 & 0,0002\\
+dokładność & 2.852 & 0.0002\\
 \hline
-po zaokrągleniu & $ 770,7 \pm 2,9 $  & $ 0,265 \pm 0,0002 $ \\
+po zaokrągleniu & $ 748.0 \pm 2.9 $  & $ 0.0273 \pm 0.0002 $ \\
 \hline
 \end{tabular}
 \caption{Współczynnik nachylenia linii $a$ i moment kierujący $D$ wraz z dokładnościami $\Delta a$ i $\Delta D$}
 \end{table}
 
-\begin{table}
+\subsection{Wyznaczanie momentów bezwładności pręta i dysku względem ich osi sym.}
+\forceindent Korzystając z wyniku uzyskanego powyżej, okresu drgań samego pręta i równania (7) możemy obliczyć moment bezwładności pręta :
+\begin{equation}
+I_P = D \left(\frac{T_P}{2\pi}\right)^2 = 4.338846\cdot 10^{-3} \left[kg\cdot m^2\right]
+\end{equation}
+
+\forceindent Umieszczając dysk na wahadle tak, żeby jego środek pokrywał się z osią obrotu, wykonujemy pomiary czasu 5 wahnięć ($t$) (pomiary zostały umieszczone w Tablicy 2 w sekcji Wyniki pomiarów). Następnie obliczamy średni czas 5 wahnięć ($t_{sr}$) i średni okres wahań dysku $T_{sr}$. 
+
+
+\begin{table}[!h]
 \centering
-\begin{tabular}{|c|c|c|c|c|c|}
+\begin{tabular}{|c||c|c|}
+\hline
+& $t_{sr}$ [s] & $T_{sr}$ [s] \\
 \hline	
- & Śr. Czas pomiaru $t$ & Śr. Okres $T$ & Teoretyczny & Zmierzony & Niepewność\\
 \hline
-Pręt & 12.517 & 2,503 & 0,004357 & 0,004212 & 0,003000\\
+Dysk& 14.185 & 2.837 \\ \hline
+\end{tabular}
+\end{table}
+
+Znając okres wahań dysku, możemy za pomocą wzoru (5) obliczyć moment bezwładności dysku $I_D$:
+\begin{equation}
+I_D = D \left(\frac{T}{2\pi}\right)^2 = 5.574\cdot 10^{-3} \left[kg\cdot m^2\right]
+\end{equation}
+
+\forceindent Korzystając z wyników pomiarów mas brył, długości pręta oraz średnicy dysku możemy, na podstawie wzorów (11) i (12) obliczyć teorytyczne wartości momentów bezwładności pręta $I_{TP}$ oraz dysku $I_{TD}$:
+\begin{equation}
+I_{TP} = \frac{1}{12}ml^2 = 4.3565\cdot 10^{-3} \left[kg\cdot m^2\right]
+\end{equation}
+\begin{equation}
+I_{TD} = \frac{1}{2}MR^2 = 5.568\cdot 10^{-3} \left[kg\cdot m^2\right]
+\end{equation}
+
+Jak widać wartości teorytyczne oraz realne momentów bezwładności dysku i pręta są bardzo zbliżone. Nieznaczne różnice wynikają z błędów pomiaru (szczególnie czasu), oraz czynników, które nie były brane pod uwagę w obliczeniach (np. opór powietrza, czy siły tarcia wahadła).
+
+\subsection{Doświadczalne potwierdzenie twierdzenia Steinera}
+
+\forceindent Kontynuując pomiary okresu drgań dysku, zmieniając odległość ($r$) osi od środka tarczy co 2cm oraz wyliczając średnie wartości okresów wahań otrzymujemy poniższą tablicę :
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c||c|c|c|}
 \hline
-Ciężarki 5 cm od osi & 14.247 & 2,849&0,005652&	0,005457&	0,006000\\
+
+ & $r$ [m] & $t_{sr}$ [s] & $T$ [s] \\
+\hline	
 \hline
-Ciężarki 10 cm od osi&  18.490 & 3,698 & 0,009537 &	0,009192&	0,006000\\
+%Sam dysk& 0 &14.185 & 2,837 \\ \hline
+Dysk 2 cm od osi& 0.02&14.22 & 2,844 \\ \hline
+Dysk 4 cm od osi& 0.04&14.525 & 2,905 \\ \hline
+Dysk 6 cm od osi& 0.06&15.87 & 3,174 \\ \hline
+Dysk 8 cm od osi& 0.08&17.225 & 3,445 \\ \hline
+Dysk 10 cm od osi& 0.10&19.015 & 3,803 \\ \hline
+Dysk 12 cm od osi& 0.12&20.845 & 4,169 \\ \hline
+Dysk 14 cm od osi& 0.14&22.825 & 4,565 \\ \hline
+
+\end{tabular}
+\caption{}
+\end{table}
+\newpage
+
+Następnie, korzystając z równania (5) obliczamy wartości realne momentów bezwładności $I_{TD}$ dla kolejnych odległości $d$, a korzystając z równania (13) obliczamy wartości teorytyczne momentów bezwładności $I_{RD}$. Wyniki tych wszystkich obliczeń zestawione są w tabeli poniżej : 
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c||c|c|c|}
+\hline	
+ & $I_{TD}$ & $I_{RD}$ & $\Delta I$\\
 \hline
-Ciężarki 15 cm od osi&24.043 &4,809 &0,016012&	0,015542&	0,006000\\
 \hline
-Ciężarki 20 cm od osi&30.003 &6,001 &0,025077&	0,024203&	0,006000\\
+Dysk& 0,005568&	0,005409&	0,003000\\
 \hline
-Ciężarki 25 cm od osi&36.430 & 7,286 &0,036732&	0,035682&	0,006000\\
+Dysk 2 cm od osi & 0,005742&	0,005437&	0,006000\\
 \hline
-Ciężarki 30 cm od osi& 42.870 & 8,574	&0,050977&	0,049412&	0,006000\\
+Dysk 4 cm od osi & 0,006264&	0,005674&	0,006000\\
 \hline
-\\
+Dysk 6 cm od osi & 0,007134&	0,006771&	0,006000\\
 \hline
-Dysk&14.185 & 2,837&0,005568&	0,005409&	0,003000\\
+Dysk 8 cm od osi & 0,008352&	0,007979&	0,006000\\
 \hline
-Dysk 2 cm od osi&14.22 & 2,844&0,005742&	0,005437&	0,006000\\
+Dysk 10 cm od osi & 0,009918&	0,009719&	0,006000\\
 \hline
-Dysk 4 cm od osi&14.525 & 2,905&0,006264&	0,005674&	0,006000\\
+Dysk 12 cm od osi & 0,011832&	0,011680&	0,006000\\
 \hline
-Dysk 6 cm od osi&15.87 & 3,174&0,007134&	0,006771&	0,006000\\
-\hline
-Dysk 8 cm od osi&17.225 & 3,445&0,008352&	0,007979&	0,006000\\
-\hline
-Dysk 10 cm od osi&19.015 & 3,803&0,009918&	0,009719&	0,006000\\
-\hline
-Dysk 12 cm od osi&20.845 & 4,169&0,011832&	0,011680&	0,006000\\
-\hline
-Dysk 14 cm od osi&22.825 & 4,565&0,014094&	0,014005&	0,006000\\
+Dysk 14 cm od osi & 0,014094&	0,014005&	0,006000\\
 \hline
 \end{tabular}
 \caption{Tabela z wynikami}
 \end{table}
 
+Dane przedstawione w tabeli można w prosty sposób przyrównać tworząc z nich wykres:
+
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}[scale=1]
+\begin{axis}[
+xlabel={Kwadrat odległości środka tarczy od osi obrotu $d^2$ [$cm^2$]},
+ylabel={Moment bezwładności $I$ [$kg\cdot m^2$]},
+xmin=0,xmax=200,
+ymin=0,ymax=0.02,
+legend pos=north west,
+ymajorgrids=true,grid style=dashed
+]
+
+
+\addplot[smooth, tension={0.3}, green, mark=*, mark size = {0.5pt}]
+coordinates {
+(0,0.005568)
+(4,0.005742)
+(16,0.006264)
+(36,0.007134)
+(64,0.008352)
+(100,0.009918)
+(144,0.011832)
+(196,0.014094)
+};
+
+\addplot[smooth, tension={0.3}, red, mark=*, mark size = {0.5pt}]
+coordinates {
+
+(0,0.005409)
+(4,0.005437)
+(16,0.005674)
+(36,0.006771)
+(64,0.007979)
+(100,0.009719)
+(144,0.011680)
+(196,0.014005)
+};
+
+
+\legend{teorytyczne, doświadczalne}
+\end{axis}
+\end{tikzpicture}
+\caption{Porównanie teorytycznych i rzeczywistych momentów bezwładności dysku w zależności od kwadratu odległości środka tarczy od osi obrotu}
+\label{fig:wyk}
+\end{figure}
+
+\forceindent Na wykresach, które były przedstawione powyżej, widać, że wykres funkcji zależności $T^2 = f(r^2)$ jest w przybliżeniu prostą.
+Widać także, że różnica pomiędzy teoretycznie obliczoną (przy pomocy twierdzenia Steinera) wartością momentu bezwładności a wartością zmierzoną jest w większości przypadków mniejsza niż dokładność obliczona na podstawie możliwości przyrządów pomiarowych. Część wyników nieznacznie odstaje od reszty (o więcej niż jeden raz wartość dokładności pomiaru), co prawdopodobnie jest spowodowane błędem wynikającym z opóźnionego czasu reakcji osoby dokonującej pomiarów czasu. Wartość takiego błędu ciężko oszacować, jednak widać, że dla mniejszych wartości $T$ jest on mniej zauważalny, co związane jest z tym, że we wzorze $T$ jest podnoszone do kwadratu (błąd pomiarowy staje się bardziej znaczącym czynnikiem).\\
+Mimo tych drobnych błędów uważamy, że nasze pomiary i obliczenia dowodzą w sposób doświadczalny zasadności twierdzenia Steinera.
+
+
+
 
 \end{document}
+
+
+
