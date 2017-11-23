@@ -238,36 +238,29 @@ D=\frac{8\pi^2m_{C}}{a} \left[\frac{kg}{\frac{s^2}{m^2}}\right] = 0.02734087 \le
 
 ----------------------------------do tego momentu ready --------------------\\
 
+Błąd wyznaczenia wielkości $a$:\\
+$$ \Delta a = \sqrt{\frac{n(\Sigma y_i ^2 - a \Sigma x_i y_i - b\Sigma y_i)}{(n-2)(n \Sigma x_i ^2 - (\Sigma x_i)^2)}} = 2,852$$
 
+Błąd wyznaczenia $D$ obliczamy stosując metodę różniczki logarytmicznej
+$$ \Delta D = (\frac{\Delta m_c}{m_c} + \frac{\Delta a}{a}) * D = (\frac{0,001}{0,259} + \frac{2,852}{770,663})*0,026535 = 0,0002$$
 
-\forceindent W celu obliczenia momentów bezwładności z danych pomiarowych posłużymy się równaniem :
-\begin{equation}
-T^2 = \frac{8 \pi^2 m_c}{D}r^2 + T_p^2
-\end{equation}
-gdzie $T$ jest okresem drgań naszego wahadła, $m_c$ jest zmierzoną masą ciężarka, $r$ jest odległością ciężarków (lub środka dysku) od osi obrotu, zaś $D$ jest momentem kierującym.\\
-\forceindent Równanie $(3)$ oznacza, że zależność kwadratu okresów $T$ od kwadratów odległości $r$ jest liniowa (co w przybliżeniu widać na wykresie). Można zatem policzyć współczynnik nachylenia prostej przy pomocy metody regresji liniowej (gdzie $x = r^2$ i $y = T^2$). Współczynnik $a$ wyraża się wzorem:
-
-
-$$
-D=\frac{kg}{\frac{s^2}{m^2}}=\frac{kg*m^2}{s^2}
-$$
+\forceindent Zatem ostateczne wartości $a$ i $D$ wyglądają następująco:
 
 \begin{table}[!h]
 \centering
 \begin{tabular}{|cc||c|}
 \multicolumn{1}{c}{} & \multicolumn{1}{c}{$a$} & \multicolumn{1}{c}{$D$}\\
 \hline
-pomiar & 24366,1434802235$\pm$& 0,000839271932206056$\pm$\\
+pomiar & 770,66250527943 & 0,0265353772617267\\
 \hline
-dokładność & zmyślona & zmyślona\\
+dokładność & 2,852 & 0,0002\\
 \hline
-po zaokrągleniu & ileś tam  & ileś tam \\
+po zaokrągleniu & $ 770,7 \pm 2,9 $  & $ 0,265 \pm 0,0002 $ \\
 \hline
 \end{tabular}
 \caption{Współczynnik nachylenia linii $a$ i moment kierujący $D$ wraz z dokładnościami $\Delta a$ i $\Delta D$}
 \end{table}
 
-TODO
 \begin{table}
 \centering
 \begin{tabular}{|c|c|c|c|c|c|}
