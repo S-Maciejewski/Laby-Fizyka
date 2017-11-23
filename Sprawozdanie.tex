@@ -46,13 +46,52 @@ złożone ze stabilnej podstawy oraz pionowej osi osadzonej na łożyskach o bar
 podstawa połączone są przy pomocy spiralnej sprężyny, która umożliwia wahania skrętne. Na końcu osi
 znajduje się śruba umożliwiająca mocowanie na niej brył.\\
 \forceindent Wahadło skrętne jest szczególnym przypadkiem wahadła fizycznego. Jeżeli założymy, że wychylenia
-wahadła są niewielkie (do około $180^{\circ}$) oraz zaniedbamy siły oporu, jego ruch można opisać jako ruch
+wahadła są niewielkie (w naszym przypadku ok $90^{\circ}$) oraz zaniedbamy siły oporu, jego ruch można opisać jako ruch
 harmoniczny prosty. W takim przypadku okres T drgań wahadła można zapisać następująco:
 \begin{equation}
 T = 2 \pi \sqrt{\frac{I}{D}},
 \end{equation}
 gdzie $I$ jest momentem bezwładności bryły zamocowanej na osi wahadła, a $D$ jest parametrem charakterystycznym dla danej sprężyny - jej momentem kierującym.
 
+\forceindent Aby wyliczyć moment bezwładności bryły zamocowanej na wahadle zastosujemy przekształcone równanie (4), wynik pomiaru okresu drgań $T$ oraz wyznaczony moment kieryjący $D$:
+\begin{equation}
+I = D \left(\frac{T}{2\pi}\right)^2
+\end{equation}
+
+\forceindent W omawianym ćwiczeniu moment kierujący sprężyny wyznaczymy mierząc okresy wahań pręta obciążonego dwoma ciężarkami. Moment bezwładności układu złożonego z pręta z dwoma ciężarkami, umieszczonymi symetrycznie w odległości $r$ od osi obrotu, można zapisać następującym wzorem:
+\begin{equation}
+I = I_P + 2m_{C}r^2,
+\end{equation}
+gdzie $I_P$ jest momentem bezwładności pręta, a $m_C$ jest masą każdego ciężarka. \\
+Na podstawie wzoru (5) moment bezwładności pręta zamocowanego na osi możemy zapisać równaniem:
+\begin{equation}
+I_P = D \left(\frac{T_P}{2\pi}\right)^2,
+\end{equation}
+gdzie $T_P$ jest okresem drgan wahadła obciążonego prętem (bez ciężarków).\\
+Podstawiając do równania (5) wzory (6) i (7), otrzymujemy zależnośc:
+\begin{equation}
+D \left(\frac{T}{2\pi}\right)^2 = 2m_{C}r^2 + D \left(\frac{T_P}{2\pi}\right)^2,
+\end{equation}
+która po przekształceniu przybiera postać:
+\begin{equation}
+T^2 = \frac{8\pi^2m_C}{D}r^2 + T_{P}^2.
+\end{equation}
+Dokonując w powyższym równaniu podstawień, $y=T^2$, $x=r^2$, $a=8\pi^2m_C/D$ oraz $b=T_{P}^2$, uzyskuje się zależność typu $y=ax+b$. Jest to funkcja liniowa, gdzie wartość $a$ jest współczynnikiem kierunkowym prostej, a $b$ punktem przecięcia z osią $y$. Stąd też moment kierujący wahadła można obliczyć ze wzoru:
+\begin{equation}
+D=\frac{8\pi^2m_{C}}{a}.
+\end{equation}
+\forceindent W celu wyznacznia momentu bezwładności pręta można skorzystać z pomiaru okresu dla nieobciążonego pręta z równania (7). Chcąc wyznaczyć moment bezwładności dysku należy zamocować jesgo środek na osi, a następnie zmierzyć okres drgań wahadła. Korzystając z równania (5) wyznaczamy doświadczalną wartość momentu bezwładności dysku. Chcąc porównać uzyskane wartości doświadczalne z wartoścami teorytycznymi należy zważyć obie bryły, zmierzyć długość pręta oraz średnicę dysku. Wartości teorytyczne momentów bezwładności obliczymy z równań:
+\begin{equation}
+I = \frac{1}{12}ml^2,
+\end{equation}
+\begin{equation}
+I = \frac{1}{2}MR^2,
+\end{equation}
+gdzie $m$ jest masą pręta, $I$ - długością pręta, $M$ - masą dysku, $R$ - promieniem dysku.\\
+\forceindent Żeby potwierdzić twierdzenie Steinera, dysk będziemy przykręcać na osi dla różnych odległości $d$ od środka tarczy. Następnie dla każdego położenia wyznaczymy okres dragań wahadła a potem korzystając z równania (5), moment bezwładności dysku. Otrzymany wynik porównamy z teorytycznym momentem bezwładności, który obliczymy na podstawie równania:
+\begin{equation}
+I = \frac{1}{2}MR^2 + Md^2.
+\end{equation} 
 \newpage
 \section{Wyniki pomiarów}
 \forceindent Masa ciężarków, masa i długość pręta, odległości między nacięciami na pręcie zostały zmierzone na początku doświadczenia i wynosiły:\\
@@ -61,12 +100,12 @@ gdzie $I$ jest momentem bezwładności bryły zamocowanej na osi wahadła, a $D$
 \hline
 Mierzona wartość & Pomiar & Dokładność pomiarowa\\
 \hhline{|=|=|=|}
-Masa ciężarków & 0.259 [kg] & $\pm$ 0.001 [kg]\\
+Masa ciężarków $m_C$ & 0.259 [kg] & $\pm$ 0.001 [kg]\\
 Masa pręta & 0.136 [kg] & $\pm$ 0.001 [kg]\\
-Masa dysku & 0.435 [kg] & $\pm$ 0.001 [kg]\\
+Masa dysku $M$& 0.435 [kg] & $\pm$ 0.001 [kg]\\
 \hline
-Długość pręta & 0.62 [m] & $\pm$ 0.001 [m]\\
-Średnica dysku & 0.32 [m] & $\pm$ 0.001 [m]\\
+Długość pręta $l$& 0.62 [m] & $\pm$ 0.001 [m]\\
+Średnica dysku 2$R$ & 0.32 [m] & $\pm$ 0.001 [m]\\
 \hline
 Odległość między nacięciami & 0.05 [m] & $\pm$ 0.001 [m]\\
 \hline
@@ -79,61 +118,86 @@ Odległość między nacięciami & 0.05 [m] & $\pm$ 0.001 [m]\\
 \vspace{10pt}
 \begin{table}[!h]
 \centering
-\begin{tabular}{|c||c|c|c||c|c|}
+\begin{tabular}{|c||c|c|c|}
 \hline
-Odległość od osi obrotu [cm]& Próba 1 [s] & Próba 2 [s] & Próba 3 [s] & Śr. 5T [s] & Śr. T [s]\\
-\hhline{|=||=|=|=||=|=|}
-0 & 12.45 & 12.50 & 12.60 & 12.517 & 2.503\\
-5 & 14.21 & 14.16 & 14.37 & 14.247 & 2.849\\ 
-10 & 18.39 & 18.46 & 18.62 & 18.490 & 3.698\\
-15 & 24.04 & 24.09 & 24.00 & 24.043 & 4.809\\
-20 & 30.20 & 30.06 & 29.75 & 30.003 & 6.001\\
-25 & 36.29 & 36.47 & 36.53 & 36.430 & 7.286\\
-30 & 42.87 & 42.83 & 42.91 & 42.870 & 8.574\\
+Odległość od osi obrotu [cm]& Próba 1 [s] & Próba 2 [s] & Próba 3 [s] \\
+\hhline{|=||=|=|=|}
+0 & 12.45 & 12.50 & 12.60 \\
+5 & 14.21 & 14.16 & 14.37 \\ 
+10 & 18.39 & 18.46 & 18.62 \\
+15 & 24.04 & 24.09 & 24.00 \\
+20 & 30.20 & 30.06 & 29.75 \\
+25 & 36.29 & 36.47 & 36.53 \\
+30 & 42.87 & 42.83 & 42.91 \\
 \hline
 
 \end{tabular}
-\caption{Pomiary czasu 5 wahnięć pręta przy różnych odległościach ciężarków od osi obrotu}
+\caption{Pomiary czasu $t$ 5 wahnięć pręta przy różnych odległościach ciężarków od osi obrotu}
 \end{table}
 \vspace{10pt}
 
 
 \begin{table}[!h]
 \centering
-\begin{tabular}{|c||c|c|c||c|c|}
+\begin{tabular}{|c||c|c|c|}
 \hline
-Odległość od osi obrotu [cm]& Próba 1 [s] & Próba 2 [s] & Próba 3 [s] & Śr. 5T [s] & Śr. T [s]\\
-\hhline{|=||=|=|=||=|=|}
-0 & 14.14 & 14.18 & 14.23 & 14.185 & 2.837\\
-2 & 14.26 & 14.22 & 14.18 & 14.22 & 2.844\\ 
-4 & 14.59 & 14.41 & 14.58 & 14.525 & 2.905\\
-6 & 15.77 & 15.86 & 15.98 & 15.87 & 3.174\\
-8 & 17.27 & 17.14 & 17.27 & 17.225 & 3.445\\
-10 & 19.08 & 18.97 & 18.99 & 19.015 & 3.803\\
-12 & 20.96 & 20.81 & 20.76 & 20.845 & 4.169\\
-14 & 22.80 & 22.84 & 22.83 & 22.825 & 4.565\\
+Odległość od osi obrotu [cm]& Próba 1 [s] & Próba 2 [s] & Próba 3 [s] \\
+\hhline{|=||=|=|=|}
+0 & 14.14 & 14.18 & 14.23 \\
+2 & 14.26 & 14.22 & 14.18 \\ 
+4 & 14.59 & 14.41 & 14.58 \\
+6 & 15.77 & 15.86 & 15.98 \\
+8 & 17.27 & 17.14 & 17.27 \\
+10 & 19.08 & 18.97 & 18.99 \\
+12 & 20.96 & 20.81 & 20.76 \\
+14 & 22.80 & 22.84 & 22.83 \\
 \hline
 
 \end{tabular}
-\caption{Pomiary czasu 5 wahnięć dysku przy różnych odległościach od osi obrotu}
+\caption{Pomiary czasu $t$ 5 wahnięć dysku przy różnych odległościach od osi obrotu}
 \end{table}
 \vspace{10pt}
-
+\newpage
 \section{Opracowanie wyników}
+\subsection{Wyznaczenie momentu kierującego sprężyny}
+
+\forceindent Dla każdego położenia ciężarków na pręcie wyznaczamy średni czas $t_{sr}$ 5 wahnięć, oraz średni okres jednego wahnięcia $T$, korzystając z zależności $T = \frac{1}{5}t_{sr}$. Wyniki przedstawiono w Tablicy 3.\\ 
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c||c|c|c|}
+\hline
+
+ & $r$ [m] & $t_{sr}$ [s] & $T$ [s] \\
+\hline	
+\hline
+%Pręt & 12.517 & 2,503 \\ \hline
+Ciężarki 5 cm od osi & 0.05 & 14.247 & 2,849\\ \hline
+Ciężarki 10 cm od osi&  0.10 & 18.490 & 3,698 \\ \hline
+Ciężarki 15 cm od osi&0.15 & 24.043 &4,809 \\ \hline
+Ciężarki 20 cm od osi&0.20 & 30.003 &6,001 \\ \hline
+Ciężarki 25 cm od osi&0.25 & 36.430 & 7,286 \\ \hline
+Ciężarki 30 cm od osi&0.30 &  42.870 & 8,574 \\ \hline
+\hline
+
+\end{tabular}
+\caption{}
+\end{table}
+
+\forceindent Następnie, korzystając z obliczonych wartości, na rysunku 1 przedstawiono wykres zależności kwadratu okresu od kwadratu odległości ciężarków od osi obrotu $T^2 = f(r^2)$.
 
 \begin{figure}[!h]
 \centering
 \begin{tikzpicture}[scale=1]
 \begin{axis}[
-xlabel={Kwadrat odległości ciężarków od osi obrotu $r^2$},
-ylabel={Kwadrat okresu wahnięcia $T^2$},
+xlabel={Kwadrat odległości ciężarków od osi obrotu $r^2$ [$m^2$]},
+ylabel={Kwadrat okresu $T^2$ [$s^2$]},
 xmin=0,xmax=0.11,
 ymin=0,ymax=80,
 legend pos=north west,
 ymajorgrids=true,grid style=dashed
 ]
 
-%mosiądz - rozszerzanie
+
 \addplot[smooth, tension={0.3}, green, mark=*, mark size = {0.5pt}]
 coordinates {
 (0, 6.265009)
@@ -152,12 +216,29 @@ coordinates {
 \draw [draw=black] (60.5,528.86) rectangle ++(4, 4);
 \draw [draw=black] (88,733.13) rectangle ++(4, 4);
 
-\legend{$f(r^2)$}
+\legend{$T^2 = f(r^2)$}
 \end{axis}
 \end{tikzpicture}
-\caption{Zależność wydłużenia pręta od zmiany temperatury podczas ogrzewania}
+\caption{Zależności kwadratu okresu od kwadratu odległości ciężarków od osi obrotu}
 \label{fig:wyk}
 \end{figure}
+
+\forceindent Posługując się metodą regresji liniowej opisanej za pomocą wzoru 
+\begin{equation}
+a=\frac{n\Sigma x_i y_i - \Sigma x_i \Sigma y_i}{n\Sigma x_i^2 - (\Sigma x_i)^2},
+\end{equation}
+gdzie $x_i$ to kolejne kwadraty odległości ciężarków od osi obrotu, a $y_i$ to kwadraty okresu dla danej odległości, wyznaczamy współczynnik nachylenia prostej $a$, oraz jego niepewność. 
+\begin{equation}
+a = 747.958 \left[\frac{s^2}{m^2}\right]
+\end{equation}
+Następnie korzystając z równania (10), wyliczamy moment kierujący $D$, oraz jego niepewność:
+\begin{equation}
+D=\frac{8\pi^2m_{C}}{a} \left[\frac{kg}{\frac{s^2}{m^2}}\right] = 0.02734087 \left[\frac{kg\cdot m^2}{s^2}\right]
+\end{equation}
+
+----------------------------------do tego momentu ready --------------------\\
+
+
 
 \forceindent W celu obliczenia momentów bezwładności z danych pomiarowych posłużymy się równaniem :
 \begin{equation}
@@ -166,17 +247,10 @@ T^2 = \frac{8 \pi^2 m_c}{D}r^2 + T_p^2
 gdzie $T$ jest okresem drgań naszego wahadła, $m_c$ jest zmierzoną masą ciężarka, $r$ jest odległością ciężarków (lub środka dysku) od osi obrotu, zaś $D$ jest momentem kierującym.\\
 \forceindent Równanie $(3)$ oznacza, że zależność kwadratu okresów $T$ od kwadratów odległości $r$ jest liniowa (co w przybliżeniu widać na wykresie). Można zatem policzyć współczynnik nachylenia prostej przy pomocy metody regresji liniowej (gdzie $x = r^2$ i $y = T^2$). Współczynnik $a$ wyraża się wzorem:
 
-\begin{equation}
-a=\frac{n\Sigma x_i y_i - \Sigma x_i \Sigma y_i}{n\Sigma x_i^2 - (\Sigma x_i)^2},
-\end{equation}
 
-zaś jego jednostką jest $ a=\frac{\frac{1}{s^2}*m^2-\frac{1}{s^2}*m^2}{m^4-m^4}=\frac{s^2}{m^2} $.\\
-
-W takiej sytuacji możemy łatwo policzyć $D$ ze wzoru:
-\begin{equation}
-D = \frac{8\pi ^2 m_c}{a},
-\end{equation}
-jednostką $D$ jest, jak widać $ D=\frac{kg}{\frac{s^2}{m^2}}=\frac{kg*m^2}{s^2} $.
+$$
+D=\frac{kg}{\frac{s^2}{m^2}}=\frac{kg*m^2}{s^2}
+$$
 
 \begin{table}[!h]
 \centering
@@ -193,51 +267,48 @@ po zaokrągleniu & ileś tam  & ileś tam \\
 \caption{Współczynnik nachylenia linii $a$ i moment kierujący $D$ wraz z dokładnościami $\Delta a$ i $\Delta D$}
 \end{table}
 
-\forceindent Z wyników uzyskanych dla nieobciążonego pręta obliczyliśmy jego moment bezwładności wraz z niepewnością jako:
-$ I = \frac{0,136kg * (0,62m)^2}{12} = (0,00436 \pm 0,00300) kg*m^2 $
-
-\forceindent W podobny sposób, znając średni okres $T = 2,837 s$ obrotu dysku wokół osi przechodzącej przez jego środek, możemy policzyć jego moment bezwładności, który wynosi
-$ I = \frac{0,435kg*(0,16m)^2}{2} = (0,00557 \pm 0,00300) kg*m^2 $
-
-\begin{center}
-\begin{tabular}{|c|c|c|c|c|}
+TODO
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
 \hline	
- & Śr. Okres T & Teoretyczny & Zmierzony & Niepewność\\
+ & Śr. Czas pomiaru $t$ & Śr. Okres $T$ & Teoretyczny & Zmierzony & Niepewność\\
 \hline
-Pręt & 2,503 & 0,004357 & 0,004212 & 0,003000\\
+Pręt & 12.517 & 2,503 & 0,004357 & 0,004212 & 0,003000\\
 \hline
-Ciężarki 5 cm od osi & 2,849&0,005652&	0,005457&	0,006000\\
+Ciężarki 5 cm od osi & 14.247 & 2,849&0,005652&	0,005457&	0,006000\\
 \hline
-Ciężarki 10 cm od osi&3,698	&0,009537&	0,009192&	0,006000\\
+Ciężarki 10 cm od osi&  18.490 & 3,698 & 0,009537 &	0,009192&	0,006000\\
 \hline
-Ciężarki 15 cm od osi&4,809 &0,016012&	0,015542&	0,006000\\
+Ciężarki 15 cm od osi&24.043 &4,809 &0,016012&	0,015542&	0,006000\\
 \hline
-Ciężarki 20 cm od osi&6,001 &0,025077&	0,024203&	0,006000\\
+Ciężarki 20 cm od osi&30.003 &6,001 &0,025077&	0,024203&	0,006000\\
 \hline
-Ciężarki 25 cm od osi&7,286 &0,036732&	0,035682&	0,006000\\
+Ciężarki 25 cm od osi&36.430 & 7,286 &0,036732&	0,035682&	0,006000\\
 \hline
-Ciężarki 30 cm od osi&8,574	&0,050977&	0,049412&	0,006000\\
+Ciężarki 30 cm od osi& 42.870 & 8,574	&0,050977&	0,049412&	0,006000\\
 \hline
-Dysk&2,837&0,005568&	0,005409&	0,003000\\
+\\
 \hline
-Dysk 2 cm od osi&2,844&0,005742&	0,005437&	0,006000\\
+Dysk&14.185 & 2,837&0,005568&	0,005409&	0,003000\\
 \hline
-Dysk 4 cm od osi&2,905&0,006264&	0,005674&	0,006000\\
+Dysk 2 cm od osi&14.22 & 2,844&0,005742&	0,005437&	0,006000\\
 \hline
-Dysk 6 cm od osi&3,174&0,007134&	0,006771&	0,006000\\
+Dysk 4 cm od osi&14.525 & 2,905&0,006264&	0,005674&	0,006000\\
 \hline
-Dysk 8 cm od osi&3,445&0,008352&	0,007979&	0,006000\\
+Dysk 6 cm od osi&15.87 & 3,174&0,007134&	0,006771&	0,006000\\
 \hline
-Dysk 10 cm od osi&3,803&0,009918&	0,009719&	0,006000\\
+Dysk 8 cm od osi&17.225 & 3,445&0,008352&	0,007979&	0,006000\\
 \hline
-Dysk 12 cm od osi&4,169&0,011832&	0,011680&	0,006000\\
+Dysk 10 cm od osi&19.015 & 3,803&0,009918&	0,009719&	0,006000\\
 \hline
-Dysk 14 cm od osi&4,565&0,014094&	0,014005&	0,006000\\
+Dysk 12 cm od osi&20.845 & 4,169&0,011832&	0,011680&	0,006000\\
 \hline
-
-
+Dysk 14 cm od osi&22.825 & 4,565&0,014094&	0,014005&	0,006000\\
+\hline
 \end{tabular}
-\end{center}
+\caption{Tabela z wynikami}
+\end{table}
 
 
 \end{document}
