@@ -32,21 +32,22 @@ n = n_{0_s} e^{\frac{E_g}{2kT}}
 gdzie $E_g$ to szerokość pasma zabronionego, $k$ to stała Boltzmana a $T$ temperatura.
 
 \subsection*{Opis doświadczenia}
-
+\forceindent Wykonywane przez nas doświadczenie polega na pomiarze rezystancji przewodnika i półprzewodnika umieszczonych w metalowym bloczku w miarę wzrostu temperatury. Układ podgrzewany jest do temperatury około 85 $^{\circ}C$, dzięki zwiększaniu napięcia prądu płynącego przez przewodnik i półprzewodnik, a następnie chłodzony za pomocą wentylatora do temperatury bliskiej 25$^{\circ}C$.
+Odczyt temperatury dokonywany jest przy pomocy termometru, zaś rezystancja mierzona jest przy pomocy dwóch multimetrów.
 
 
 \newpage
 \section{Wyniki pomiarów}
 
------------------- DOKŁADNOŚĆ POMIARÓW ------------------------ \\
+\forceindent Dokładność pomiaru temperatury to $0,1 ^{\circ}C$ a dokładność pomiaru rezystancji jest różna w zależności od multimetru - dla półprzewodnika wynosi ona $0,1 k\Omega$ zaś dla przewodnika $0,1 \Omega$.
+
 
 \forceindent Dla ogrzewania i chłodzenia przewodnika i półprzewodnika otrzymaliśmy następujące odczyty oporu:\\
 %\subsection*{Ogrzewanie}
 \vspace{10pt}
 \begin{center}
 \begin{tabular}{|c|c|c|}
-\hline
-Temperatura $[K]$ & Opór półprzewodnika $[k\Omega]$ & Opór przewodnika $[\Omega]$\\
+\multicolumn{1}{c}{Temperatura $[K]$} & \multicolumn{1}{c}{Opór półprzewodnika $[k\Omega]$} & \multicolumn{1}{c}{Opór przewodnika $[\Omega]$}\\
 \hline
 295,95&208,0&109,1\\ 
  \hline 
@@ -338,7 +339,7 @@ a = -3869,397 \left[\frac{K}{\Omega}\right]
 b = 0.0004225 
 \end{equation}
 Błąd wyznaczenia wielkości $a$:\\
-$$ \Delta a = \sqrt{\frac{n(\Sigma y_i ^2 - a \Sigma x_i y_i - b\Sigma y_i)}{(n-2)(n \Sigma x_i ^2 - (\Sigma x_i)^2)}} = 2.60816$$
+$$ \Delta a = \sqrt{\frac{n(\Sigma y_i ^2 - a \Sigma x_i y_i - b\Sigma y_i)}{(n-2)(n \Sigma x_i ^2 - (\Sigma x_i)^2)}} = 2,60816$$
 Następnie korzystając z równania:
 \begin{equation}
 a = \frac{E_A}{2k} \Rightarrow E_A = 2ak
@@ -346,7 +347,10 @@ a = \frac{E_A}{2k} \Rightarrow E_A = 2ak
 obliczamy energię aktywacji $E_A$, która wynosi:
 $$ E_A = -1,068 * 10^-19 \frac{J}{K} = -0,667 \frac{eV}{K} $$
 
-
+Błąd wyznaczenia $E_A$ wyznaczamy za pomocą różniczki logarytmicznej:
+$$ \Delta E_A = \left (\frac{\Delta a}{a} \right ) E_A$$
+co po podstawieniu odpowiednich wartości $\Delta a$, $a$ i $E_A$ daje nam:
+$$ \Delta E_A = 7,20 * 10^-23 \left [\frac{J}{K} \right ] = 0,0004495 \left [\frac{eV}{K} \right ] $$
 
 
 
@@ -359,14 +363,17 @@ $$ E_A = -1,068 * 10^-19 \frac{J}{K} = -0,667 \frac{eV}{K} $$
 \hline
 pomiar & $-3869,39702854943$ & $-1,068 * 10^-19$ & $-0,667$\\
 \hline
-dokładność & TODO & TODO & TODO\\
+dokładność & $2,60816$ & $7,20 * 10^-23$ & $0,0004495$\\
 \hline
-po zaokrągleniu & TODO  & TODO & TODO\\
+po zaokrągleniu & $(-3869,4 \pm 2,6) \left[\frac{K}{\Omega}\right]$  & $(-1,0680 \pm 0,0007) \frac{J}{K} $  & $(-0,66700 \pm 0,00045) \frac{eV}{K} $\\
 \hline
 \end{tabular}
 \caption{Współczynnik nachylenia linii $a$ i energia aktywacji $E_A$ wraz z dokładnościami $\Delta a$ i $\Delta E_A$}
 \end{table}
 
+\section*{Wnioski}
+\forceindent Wyniki uzyskane w doświadczeniu (szczególnie wykresy) stanowią potwierdzenie zależności opisanych we wstępie teoretycznym.
+Rysunek 1. najlepiej obrazuje relację między wzrostem temperatury a rezystancją dla półprzewodnika i przewodnika, a porównanie występujących na nim wykresów ukazuje różny sposób reakcji na wzrost temperatury tych dwóch materiałów.
 
 
 
