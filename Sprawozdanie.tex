@@ -7,6 +7,7 @@
 \usepackage{hhline}
 \usepackage{pgfplots}
 
+\usepackage{slashbox}
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
@@ -15,393 +16,113 @@
 \geometry{a4paper, total={170mm,257mm}, left=20mm, top=20mm }
 
 \author{Sebastian Maciejewski 132275 i Jan Techner 132332}
-\title{Wyznaczanie zależności przewodnictwa od temperatury 
-dla półprzewodników i przewodników - \\ doświadczenie 203 (sala 217A)}
-\date{8 grudnia 2017}
+\title{Badanie oddziaływania pola magnetycznego na przewodnik z prądem - \\ doświadczenie 204 (sala 217A)}
+\date{22 grudnia 2017}
 \setlength{\parindent}{0pt}
 \newcommand{\forceindent}{\leavevmode{\parindent=3em\indent}}
 \begin{document}
 \maketitle
-\section{Wstęp teorytyczny}
-\forceindent Przewodnictwo właściwe materiałów zależy od temperatury. Dla metali (przewodników) spada przy wzroście temperatury ze względu na spadek ruchliwości nośników. W przypadku półprzewodnika samoistnego zdolność przewodzenia prądu rośnie wykładniczo przy wzroście temperatury. Dzieje się tak, gdyż rośnie koncentracja nośników. Ruchliwość spada podobnie jak w metalach, zmiany te są jednak niewielkie w porównaniu ze zmianami koncentracji.\\
-Takie właściwości półprzewodnika wynikają z tego, iż nośnikami prądu są w nim elektrony w paśmie przewodnictwa i dziury w paśmie walencyjnym. Elektrony są dostarczane do pasma przewodnictwa z pasma walencyjnego (w półprzewodnikach samoistnych) lub z poziomów domieszkowych (w półprzewodnikach domieszkowanych). Dziury natomiast powstają w paśmie walencyjnym po przejściu elektronu do pasma przewodnictwa.\\
-Liczba elektronów przechodzących na wyższy poziom energetyczny zależy wykładniczo min. od temperatury i wyraża się (dla półprzewodników samoistnych) wzorem:
-\begin{equation}
-n = n_{0_s} e^{\frac{E_g}{2kT}}
-\end{equation}
-gdzie $E_g$ to szerokość pasma zabronionego, $k$ to stała Boltzmana a $T$ temperatura.
+\section{Wstęp teoretyczny}
+\forceindent Oddziaływanie pola magnetycznego na przewodnik z prądem jest zjawiskiem powszechnie wykorzystywanym w technice. W licznych doświadczeniach z cząsteczkami obdarzonymi ładunkiem elektrycznym poruszającymi się w polu magnetycznym zaobserwowano występowanie siły powodującej zakrzywienie ich toru. Siłę tę jako pierwszy opisał Holenderski fizyk Hendrik Lorentz, a konsekwencją występowania siły Lorentza jest siła działająca w polu magnetycznym na przewodnik z prądem. Siła ta bierze się z tego, że w odcinku o długości $l$ w danej chwili przepływa $n$ elektronów o ładunku $e$ i średniej prędkości unoszenia $v_u$ i na każdy elektron działa siła Lorentza.
 
 \subsection*{Opis doświadczenia}
-\forceindent Wykonywane przez nas doświadczenie polega na pomiarze rezystancji przewodnika i półprzewodnika umieszczonych w metalowym bloczku w miarę wzrostu temperatury. Układ podgrzewany jest do temperatury około 85 $^{\circ}C$, dzięki zwiększaniu napięcia prądu płynącego przez przewodnik i półprzewodnik, a następnie chłodzony za pomocą wentylatora do temperatury bliskiej 25$^{\circ}C$.
-Odczyt temperatury dokonywany jest przy pomocy termometru, zaś rezystancja mierzona jest przy pomocy dwóch multimetrów.
+\forceindent Doświadczenie polega na zbadaniu siły elektrodynamicznej działającej na ramkę w polu magnetycznym. Chcąc wyznaczyć siłę elektrodynamiczną działającą na dolny bok ramki, musimy rozważyć momenty sił występujące po wychyleniu ramki z położenia równowagi. Momenty te będą związane z siłami: grawitacji oraz elektrodynamiczną. \\
+Szukana przez nas siła będzie miała postać $$F_ED = \frac{1}{2} tg(\alpha)mg,$$ gdzie $m$ to masa ramki i $\alpha$ to kąt odchylenia.\\
+Ponieważ widać, że $tg(\alpha)$ będzie równy stosunkowi długości odcinka $x$ odczytanej ze skali do odległości osi obrotu od środka skali $d$, można powyższy wzór przedstawić jako
+$$ F_{ED} = \frac{mgx}{2d}, $$ a z racji tego, że wielkości $m$, $g$ i $d$ są stałe finalna postać wzoru to (po podstawieniu $c=\frac{mg}{2d}$):
+$$ F_{ED} = cx $$
 
 
 \newpage
 \section{Wyniki pomiarów}
 
-\forceindent Dokładność pomiaru temperatury to $0,1 ^{\circ}C$ a dokładność pomiaru rezystancji jest różna w zależności od multimetru - dla półprzewodnika wynosi ona $0,1 k\Omega$ zaś dla przewodnika $0,1 \Omega$.
+Wyniki pomiarów natężenia prądu $I[A]$ w zależności od wychylenia i liczby zwojów\\
 
-
-\forceindent Dla ogrzewania i chłodzenia przewodnika i półprzewodnika otrzymaliśmy następujące odczyty oporu:\\
-%\subsection*{Ogrzewanie}
-\vspace{10pt}
 \begin{center}
-\begin{tabular}{|c|c|c|}
-\multicolumn{1}{c}{Temperatura $[^{\circ}C]$} & \multicolumn{1}{c}{Opór półprzewodnika $[k\Omega]$} & \multicolumn{1}{c}{Opór przewodnika $[\Omega]$}\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+%\multicolumn{1}{c}{zwoje} & \multicolumn{10}{c}{wychylenie w $m$}
 \hline
-22,8&208,0&109,1\\ 
+\backslashbox{Zwoje}{Wychylenie ($m$)}&0,01&0,02&0,03&0,04&0,05&0,06&0,07&0,08&0,09&0,1\\ 
  \hline 
-26,3&177,0&110,4\\ 
+5&0,128&0,281&0,421&0,566&0,706&0,859&1,008&1,118&1,281&1,426\\ 
  \hline 
-31,3&144,0&112,1\\ 
+-5&0,145&0,289&0,426&0,596&0,738&0,882&1,057&1,213&1,381&1,557\\ 
  \hline 
-36,3&117,0&114,1\\ 
+10&0,065&0,141&0,208&0,277&0,351&0,432&0,501&0,592&0,652&0,732\\ 
  \hline 
-41,3&95,0&116,0\\ 
+-10&0,075&0,141&0,218&0,301&0,374&0,454&0,529&0,616&0,694&0,781\\ 
  \hline 
-46,3&80,1&117,9\\ 
+15&0,046&0,091&0,143&0,195&0,242&0,282&0,337&0,39&0,444&0,495\\ 
  \hline 
-51,3&66,5&119,8\\ 
+-15&0,047&0,098&0,139&0,198&0,245&0,307&0,354&0,417&0,478&0,525\\ 
  \hline 
-56,3&54,7&121,7\\ 
+20&0,037&0,075&0,102&0,143&0,186&0,213&0,261&0,298&0,341&0,381\\ 
  \hline 
-61,3&46,4&123,5\\ 
+-20&0,036&0,071&0,112&0,152&0,187&0,227&0,278&0,315&0,369&0,419\\ 
  \hline 
-66,3&39,2&125,3\\ 
+25&0,02&0,049&0,088&0,118&0,144&0,175&0,202&0,241&0,275&0,308\\ 
  \hline 
-71,3&33,0&127,1\\ 
+-25&0,027&0,055&0,085&0,122&0,147&0,186&0,218&0,248&0,293&0,323\\ 
  \hline 
-76,3&28,0&129,1\\ 
- \hline 
-81,3&23,9&130,8\\ 
- \hline 
-86,3&20,4&132,6\\ 
- \hline 
-81,3&26,8&131,3\\ 
- \hline 
-76,3&31,6&129,9\\ 
- \hline 
-71,3&38,1&128,1\\ 
- \hline 
-66,3&44,9&126,4\\ 
- \hline 
-61,3&52,7&124,6\\ 
- \hline 
-56,3&61,2&122,9\\ 
- \hline 
-51,3&73,4&120,7\\ 
- \hline 
-46,3&87,0&118,6\\ 
- \hline 
-41,3&103,6&116,6\\ 
- \hline 
-36,3&124,7&114,6\\ 
- \hline 
-31,3&149,9&112,5\\ 
- \hline 
-26,3&181,6&110,5\\ 
- \hline 
-24,9&191,7&109,9\\ 
- \hline 
-
 \end{tabular}
 \end{center}
 
-%\subsection*{Ochładzanie}
-%\vspace{10pt}
-%\begin{center}
-%\begin{tabular}{|c|c|c|}
-%\hline
-%Temperatura $[K]$ & Opór półprzewodnika $[k\Omega]$ & Opór przewodnika $[\Omega]$\\
-%\hline
-%359,45&20,4&132,6\\ 
-% \hline 
-%354,45&26,8&131,3\\ 
-% \hline 
-%349,45&31,6&129,9\\ 
-% \hline 
-%344,45&38,1&128,1\\ 
-% \hline 
-%339,45&44,9&126,4\\ 
-% \hline 
-%334,45&52,7&124,6\\ 
-% \hline 
-%329,45&61,2&122,9\\ 
-% \hline 
-%324,45&73,4&120,7\\ 
-% \hline 
-%319,45&87,0&118,6\\ 
-% \hline 
-%314,45&103,6&116,6\\ 
-% \hline 
-%309,45&124,7&114,6\\ 
-% \hline 
-%304,45&149,9&112,5\\ 
-% \hline 
-%299,45&181,6&110,5\\ 
-% \hline 
-%298,05&191,7&109,9\\ 
-% \hline 
-%\end{tabular}
-%\end{center}
-
-
-\newpage
 \section{Opracowanie wyników}
 
-\forceindent Poniższe wykresy przedstawiają zależności zmierzonych wartości oporu przewodnika i połprzewodnika od temperatury:  
-
-\begin{figure}[!h]
-\centering
-\begin{minipage}{.5\textwidth}
-\centering
-\begin{tikzpicture}[scale=0.9]
-\begin{axis}[
-xlabel={Temperatura [$K$]},
-ylabel={Opór przewodnika [$\Omega$]},
-xmin=290,xmax=365,
-ymin=107,ymax=135,
-legend pos=north west,
-ymajorgrids=true,grid style=dashed]
-
-\addplot[smooth, tension={0.3}, red, mark=*, mark size = {0.5pt}]
-coordinates {
-(295.95, 109.1)
-(299.45, 110.4)
-(304.45, 112.1)
-(309.45, 114.1)
-(314.45, 116.0)
-(319.45, 117.9)
-(324.45, 119.8)
-(329.45, 121.7)
-(334.45, 123.5)
-(339.45, 125.3)
-(344.45, 127.1)
-(349.45, 129.1)
-(354.45, 130.8)
-(359.45, 132.6)
-};
-%\draw [draw=black] (0.5,79.17) rectangle ++(4, 4);
-%\draw [draw=black] (8,134.75) rectangle ++(4, 4);
-%\draw [draw=black] (20.5,229.26) rectangle ++(4, 4);
-%\draw [draw=black] (38,358.12) rectangle ++(4, 4);
-%\draw [draw=black] (60.5,528.86) rectangle ++(4, 4);
-%\draw [draw=black] (88,733.13) rectangle ++(4, 4);
-\legend{$R = f(T)$}
-\end{axis}
-\end{tikzpicture}
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-\centering
-\begin{tikzpicture}[scale=0.9]
-\begin{axis}[
-xlabel={Temperatura [$K$]},
-ylabel={Opór półprzewodnika [$\Omega$]},
-xmin=290,xmax=365,
-ymin=0,ymax=230000,
-legend pos=north east, ymajorgrids=true,grid style=dashed]
-
-\addplot[smooth, tension={0.3}, green, mark=*, mark size = {0.5pt}]
-coordinates {
-(295.95, 208000.0)
-(299.45, 177000.0)
-(304.45, 144000.0)
-(309.45, 117000.0)
-(314.45, 95000.0)
-(319.45, 80000.1)
-(324.45, 66000.5)
-(329.45, 54000.7)
-(334.45, 46000.4)
-(339.45, 39000.2)
-(344.45, 33000.0)
-(349.45, 28000.0)
-(354.45, 23000.9)
-(359.45, 20000.4)
-};
-%\draw [draw=black] (0.5,79.17) rectangle ++(4, 4);
-%\draw [draw=black] (8,134.75) rectangle ++(4, 4);
-%\draw [draw=black] (20.5,229.26) rectangle ++(4, 4);
-%\draw [draw=black] (38,358.12) rectangle ++(4, 4);
-%\draw [draw=black] (60.5,528.86) rectangle ++(4, 4);
-%\draw [draw=black] (88,733.13) rectangle ++(4, 4);
-\legend{$R = f(T)$}
-\end{axis}
-\end{tikzpicture}
-\end{minipage}
-\caption{Zależność oporu przewodnika i półprzewodnika od temperatury}
-\end{figure}
-
-\forceindent W tabeli poniżej znajdują się wartości zmierzonej temperatury (w kelwinach), jej odwrotności oraz logarytm naturalny odwrotności oporu półprzewodnika w danej temperaturze: 
-
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\multicolumn{1}{c}{$T (K)$} & \multicolumn{1}{c}{$1/T$} & \multicolumn{1}{c}{$ln(1/R)$}\\
-\hline
-295,95&0,00337895&-12,24529336\\ 
- \hline 
-299,45&0,00333946&-12,08390501\\ 
- \hline 
-304,45&0,00328461&-11,87756858\\ 
- \hline 
-309,45&0,00323154&-11,66992921\\ 
- \hline 
-314,45&0,00318016&-11,46163217\\ 
- \hline 
-319,45&0,00313038&-11,29103113\\ 
- \hline 
-324,45&0,00308214&-11,10495723\\ 
- \hline 
-329,45&0,00303536&-10,90961899\\ 
- \hline 
-334,45&0,00298998&-10,74505474\\ 
- \hline 
-339,45&0,00294594&-10,57643203\\ 
- \hline 
-344,45&0,00290318&-10,40426284\\ 
- \hline 
-349,45&0,00286164&-10,23995979\\ 
- \hline 
-354,45&0,00282127&-10,08163374\\ 
- \hline 
-359,45&0,00278203&-9,92329018\\ 
-% \hline 
-%354,45&0,00282127&-10,19615717\\ 
-% \hline 
-%349,45&0,00286164&-10,3609124\\ 
-% \hline 
-%344,45&0,00290318&-10,54796956\\ 
-% \hline 
-%339,45&0,00294594&-10,71219307\\ 
-% \hline 
-%334,45&0,00298998&-10,87237073\\ 
-% \hline 
-%329,45&0,00303536&-11,02190247\\ 
-% \hline 
-%324,45&0,00308214&-11,20367921\\ 
-% \hline 
-%319,45&0,00313038&-11,3736634\\ 
-% \hline 
-%314,45&0,00318016&-11,54829261\\ 
-% \hline 
-%309,45&0,00323154&-11,73366613\\ 
-% \hline 
-%304,45&0,00328461&-11,91772368\\ 
-% \hline 
-%299,45&0,00333946&-12,10956175\\ 
-% \hline 
-%298,05&0,00335514&-12,16368693\\ 
- \hline 
-
-\end{tabular}
-\end{center}
-
-\forceindent Wartości z tabeli przedstawione na wykresie:
-
-\begin{figure}[!h]
-\centering
-\resizebox{!}{6cm}{
-\begin{tikzpicture}[scale=1]
-\begin{axis}[
-xlabel={$\frac{1}{T}$},
-ylabel={$ln(\frac{1}{R})$},
-xmin=0.0027,xmax=0.0035,
-ymin=-12.5,ymax=-9.5,
-legend pos=north east,
-ymajorgrids=true,grid style=dashed
-]
+\forceindent Poniższe wykresy TODO
 
 
-\addplot[smooth, tension={0.3}, cyan, mark=*, mark size = {0.5pt}]
-coordinates {
-(0.00337895, -12.24529336)
-(0.00333946, -12.08390501)
-(0.00328461, -11.87756858)
-(0.00323154, -11.66992921)
-(0.00318016, -11.46163217)
-(0.00313038, -11.29103113)
-(0.00308214, -11.10495723)
-(0.00303536, -10.90961899)
-(0.00298998, -10.74505474)
-(0.00294594, -10.57643203)
-(0.00290318, -10.40426284)
-(0.00286164, -10.23995979)
-(0.00282127, -10.08163374)
-(0.00278203, -9.92329018)
-};
 
-%\draw [draw=black] (0.5,79.17) rectangle ++(4, 4);
-%\draw [draw=black] (8,134.75) rectangle ++(4, 4);
-%\draw [draw=black] (20.5,229.26) rectangle ++(4, 4);
-%\draw [draw=black] (38,358.12) rectangle ++(4, 4);
-%\draw [draw=black] (60.5,528.86) rectangle ++(4, 4);
-%\draw [draw=black] (88,733.13) rectangle ++(4, 4);
-
-\legend{$ln(\frac{1}{R}) = f(\frac{1}{T})$}
-\end{axis}
-\end{tikzpicture}
-}
-\caption{Zależność logarytmu naturalnego odwrotności oporu półprzewodnika od odwrotności temperatury}
-\label{fig:wyk}
-\end{figure}
-\vspace{10pt}
-
-\forceindent Dla zależności:
-\begin{equation}
-ln(1/R) = f(1/T)
-\end{equation}  
-wyliczymy teraz, korzystając z metody regresji liniowej, współczynnik nachylenia prostej.\\
-Przyjmujemy, że $ln(1/R) = y$ i $1/T = x$.
-Posługując się poniższymi wzorami:
+\forceindent Wyliczymy teraz, korzystając z metody regresji liniowej, współczynnik nachylenia prostej odpowiadającej zależności siły elektrodynamicznej od natężenia prądu przepływającego przez uzwojenia ramki (dla 10 zwojów) wychylonej w prawo.\\
+Przyjmujemy, że $F_{ED} = y$, $I = x$ i wzorami:
 \begin{equation}
 a=\frac{n\Sigma x_i y_i - \Sigma x_i \Sigma y_i}{n\Sigma x_i^2 - (\Sigma x_i)^2},
 \end{equation}
 \begin{equation}
-b=\frac{1}{n} \left( \Sigma y_i - a\Sigma x_i \right)
+b=\frac{\Sigma x_i^2 \Sigma y_i - \Sigma x_i \Sigma x_i y_i}{n \Sigma x_i^2 - (\Sigma x_i)^2},
 \end{equation}
 wyznaczamy współczynnik $a$ oraz punkt $b$ przecięcia prostej z osią OY:
 \begin{equation}
-a = -3869,397 \left[\frac{K}{\Omega}\right]
+a = 0,356601115 
 \end{equation}
 \begin{equation}
-b = 0.0004225 
+b = 0,0048569 
 \end{equation}
 Błąd wyznaczenia wielkości $a$:\\
-$$ \Delta a = \sqrt{\frac{n(\Sigma y_i ^2 - a \Sigma x_i y_i - b\Sigma y_i)}{(n-2)(n \Sigma x_i ^2 - (\Sigma x_i)^2)}} = 2,60816$$
+$$ \Delta a = \sqrt{\frac{n(\Sigma y_i ^2 - a \Sigma x_i y_i - b\Sigma y_i)}{(n-2)(n \Sigma x_i ^2 - (\Sigma x_i)^2)}} = 0,003340024$$
 Następnie korzystając z równania:
 \begin{equation}
-a = \frac{E_A}{2k} \Rightarrow E_A = 2ak
+B = \frac{a_R}{na}
 \end{equation}
-obliczamy energię aktywacji $E_A$, która wynosi:
-$$ E_A = -1,068 * 10^-19 \frac{J}{K} = -0,667 \frac{eV}{K} $$
+gdzie $a_R$ jest obliczonym przez nas wyżej współczynnikiem $a$, $n$ jest ilością zwojów zaś $a$ jest długością dolnego boku ramki i wynosi $a = (13,0 \pm 0,2) cm$,
+obliczamy wartość indukcji pola magnetycznego $B$, która wynosi:
+$$ B = \frac{0,356601115}{10*0,13} = 0,27430855 T $$
 
-Błąd wyznaczenia $E_A$ wyznaczamy za pomocą różniczki logarytmicznej:
-$$ \Delta E_A = \left (\frac{\Delta a}{a} \right ) E_A$$
-co po podstawieniu odpowiednich wartości $\Delta a$, $a$ i $E_A$ daje nam:
-$$ \Delta E_A = 7,20 * 10^-23 \left [\frac{J}{K} \right ] = 0,0004495 \left [\frac{eV}{K} \right ] $$
+Błąd wyznaczenia $B$ wyznaczamy za pomocą różniczki logarytmicznej:
+$$ \Delta B = \left ( \frac{\Delta a_R}{a_R} + \frac{\Delta a}{a}  \right ) B$$
+co po podstawieniu odpowiednich wartości $\Delta a_R$, $a_R$, $\Delta a$, $a$ i $B$ daje nam:
+$$ \Delta B = 0,006789381 T $$
 
 
-
-\forceindent Zatem ostateczne wartości $a$ i $E_A$ wyglądają następująco:
+\forceindent Zatem ostateczne wartości $a_R$ i $B$ wyglądają następująco:
 
 \begin{table}[!h]
 \centering
 \begin{tabular}{|cc||c|c|}
-\multicolumn{1}{c}{} & \multicolumn{1}{c}{$a$} & \multicolumn{1}{c}{$E_A [\frac{J}{K}]$} & \multicolumn{1}{c}{$E_A [\frac{eV}{K}]$}\\
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{$a$} & \multicolumn{1}{c}{$B$}\\
 \hline
-pomiar & $-3869,39702854943$ & $-1,068 * 10^-19$ & $-0,667$\\
+wynik obliczeń & $0,356601115$ & $0,27430855$ \\
 \hline
-dokładność & $2,60816$ & $7,20 * 10^-23$ & $0,0004495$\\
+dokładność & $0,003340024$ & $0,006789381$\\
 \hline
-po zaokrągleniu & $(-3869,4 \pm 2,6) \left[\frac{K}{\Omega}\right]$  & $(-1,0680 \pm 0,0007) \frac{J}{K} $  & $(-0,66700 \pm 0,00045) \frac{eV}{K} $\\
+po zaokrągleniu & $0,357 \pm 0,003$  & $(0,274 \pm 0,007) T $\\
 \hline
 \end{tabular}
-\caption{Współczynnik nachylenia linii $a$ i energia aktywacji $E_A$ wraz z dokładnościami $\Delta a$ i $\Delta E_A$}
+\caption{Współczynnik nachylenia prostej $a$ i wartość indukcji pola magnetycznego $B$ wraz z dokładnościami $\Delta a$ i $\Delta E_A$}
 \end{table}
 
 \section*{Wnioski}
-\forceindent Wyniki uzyskane w doświadczeniu (szczególnie wykresy) stanowią potwierdzenie zależności opisanych we wstępie teoretycznym.
-Rysunek 1. najlepiej obrazuje relację między wzrostem temperatury a rezystancją dla półprzewodnika i przewodnika, a porównanie występujących na nim wykresów ukazuje różny sposób reakcji na wzrost temperatury tych dwóch materiałów.
-
+\forceindent TODO
 
 
 \end{document}
