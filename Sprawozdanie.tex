@@ -8,7 +8,7 @@
 \usepackage{pgfplots}
 
 \usepackage{multicol}
-\usepackage{slashbox}
+%\usepackage{slashbox}
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
@@ -41,7 +41,7 @@ gdzie $m$ rząd maksimum, $\lambda$ to długość fali (dla używanej w doświad
 Dzięki obliczeniu wartości $d$ dla każdego rzędu, można później obliczyć średnią wartość stałej $d$ dla każdej z badanych siatek.//
 
 \newpage
-\section{Wyniki pomiarów}
+\section{Wyniki pomiarów i obliczenia}
 
 Prążek zerowy został oczytany przy ustawieniu kolimatora pod kątem $\alpha = 177,7167$\\
 
@@ -177,21 +177,28 @@ Obliczone średnie wartości to:
 \hline
 Siatka & Stała $d$\\
 \hline
-A & $1,266 * 10^-5 m$\\
+A & $1,266 \cdot 10^{-5} m$\\
 \hline
-B & $4,665 * 10^-6 m$\\
+B & $4,665 \cdot 10^{-6} m$\\
 \hline
-C & $2,506 * 10^-6 m$\\
+C & $2,506 \cdot 10^{-6} m$\\
 \hline
-D & $1,670 * 10^-6 m$\\
+D & $1,670 \cdot 10^{-6} m$\\
 \hline
-E & $1,495 * 10^-6 m$\\
+E & $1,495 \cdot 10^{-6} m$\\
 \hline
 \end{tabular}
 \end{center}
 
 Dla każdej z obliczonych wartości stałej siatki można oszacować niepewność $\Delta d$ - jest ona związana z niepewnością odczytu kąta $\alpha$. Dla stosowanych do pomiaru urządzeń, 
-niepewność wynosiła 1 minutę kątową czyli w przybliżeniu $\Delta \alpha = 0,167^\circ$. Dzięki temu można obliczyć, że niepewność wyznaczenia $d$ to 
+niepewność wynosiła 1 minutę kątową czyli w przybliżeniu $\Delta \alpha = 0,167^\circ$. Równanie $(1)$ nie ma postaci iloczynowej, więc do wyznaczenia niepewności pomiarowej zastosujemy metodę różniczki zupełnej :
+
+$$
+\Delta d = | \frac{\partial d}{\partial \lambda} \cdot \Delta \lambda | + | \frac{\partial d}{\partial \alpha} \cdot \Delta \alpha | 
+$$ 
+$$
+\frac{\partial d}{\partial \lambda} = \frac{m}{sin\alpha}; \qquad \frac{\partial d}{\partial \alpha} = \frac{-m\lambda \cdot cos\alpha}{sin^2 \alpha}
+$$ 
 
 %% TODO
 
@@ -202,21 +209,22 @@ Ostateczne wartości $d$ po zaokrągleniu wyglądają następująco:
 \hline
 Siatka & Stała $d$\\
 \hline
-A & $1,266 * 10^-5 m$\\
+A & $1,3 \cdot 10^{-5} m$\\
 \hline
-B & $4,665 * 10^-6 m$\\
+B & $5,0 \cdot 10^{-6} m$\\
 \hline
-C & $2,506 * 10^-6 m$\\
+C & $2,5 \cdot 10^{-6} m$\\
 \hline
-D & $1,670 * 10^-6 m$\\
+D & $1,7 \cdot 10^{-6} m$\\
 \hline
-E & $1,495 * 10^-6 m$\\
+E & $1,5 \cdot 10^{-6} m$\\
 \hline
 \end{tabular}
 \end{center}
 
 \section*{Wnioski}
-%% TODO
+
+Na podstawie wyznaczonych wartości można zauważyć, że im mniejsza jest stała siatki dyfrakcyjnej, czyli im mniejsza jest odległość między środkami poszczególnych szczelin, tym dalej od siebie są prążki interferencyjne, co zgadza się z 	 
 
 
 \end{document}
